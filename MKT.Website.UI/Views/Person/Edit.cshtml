@@ -1,0 +1,47 @@
+﻿@model Person
+
+<form method="post" asp-action="Edit">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary"> Edit Category</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="PersonName" ></label>
+            <input asp-for="PersonName" class="form-control" />
+            <span asp-validation-for="PersonName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="PersonPhone"></label>
+            <input asp-for="PersonPhone" class="form-control" />
+            <span asp-validation-for="PersonPhone" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="PersonEmail"></label>
+            <input asp-for="PersonEmail" class="form-control" />
+            <span asp-validation-for="PersonEmail" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="PersonSubscription"></label>
+            <input asp-for="PersonSubscription" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+        <a asp-controller="Person" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Back to
+        </a>
+    </div>
+</form>
+@section Scripts {
+    @{
+        <partial anme="_ValidationScriptsPartial"></partial>
+
+    }
+}
+
+
+
+       

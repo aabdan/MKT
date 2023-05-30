@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Person>;
+
+@{
+    ViewData["Title"] = "Person - Index";
+}
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Person List</h2>
+        </div>
+        <div class="col-6 text-end" >
+            <a asp-controller="Person" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> &nbsp; Create New Person
+            </a>
+        </div>
+    </div>
+    <br />
+
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+       
+            <th>
+                Display Order
+            </th>
+                 <th>
+                Person Name
+            </th>
+                            <th>Phone</th>
+
+            <th>Email</th>
+                <th>Subscription</th>
+                <th>Created Date</th>
+
+                <th></th>
+                <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+            
+                <td width="5%">
+                    @obj.Id
+                </td>
+                        <td width="20%">
+                    @obj.PersonName
+                    </td>
+                             <td width="20%">
+                    @obj.PersonPhone
+                    </td>
+                             <td width="20%">
+                    @obj.PersonEmail
+                    </td>
+                             <td width="5%">
+                    @obj.PersonSubscription
+                    </td>
+                                         <td width="10%">
+                    @obj.CreatedDateTime
+                    </td>
+                    <td width="10%">
+                        <div class="w-75 btn-group" role="group">
+                            <a asp-controller="Person" asp-action="Edit" asp-route-id="@obj.Id"
+                            class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                        </div>
+                    </td width="10%">
+                      <td>
+                            <div class="w-75 btn-group" role="group">
+                                    <a asp-controller="Person" asp-action="Delete" asp-route-id="@obj.Id"
+                                class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
+                                </div>
+                        </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>

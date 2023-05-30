@@ -1,0 +1,65 @@
+﻿@model Company
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary"> Create Category</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="CompanyName" ></label>
+            <input asp-for="CompanyName" class="form-control" />
+            <span asp-validation-for="CompanyName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CompanyPhone"></label>
+            <input asp-for="CompanyPhone" class="form-control" />
+            <span asp-validation-for="CompanyPhone" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="CompanyEmail"></label>
+            <input asp-for="CompanyEmail" class="form-control" />
+            <span asp-validation-for="CompanyEmail" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="LookingFor"></label>
+            <input asp-for="LookingFor" class="form-control" />
+            <span asp-validation-for="LookingFor" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Machine"></label>
+            <input asp-for="Machine" class="form-control" />
+            <span asp-validation-for="Machine" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="RentPeriod"></label>
+            <input asp-for="RentPeriod" class="form-control" />
+            <span asp-validation-for="RentPeriod" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="CompanyDescription"></label>
+            <input asp-for="CompanyDescription" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+        <a asp-controller="Company" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Back to
+        </a>
+    </div>
+</form>
+@section Scripts {
+    @{
+        <partial anme="_ValidationScriptsPartial"></partial>
+
+    }
+}
+
+
+
+       

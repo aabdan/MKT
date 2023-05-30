@@ -1,0 +1,79 @@
+﻿@{
+    Layout = "~/Views/Shared/_Main.cshtml";
+    ViewData["Title"] = _localization.Getkey("str_title");
+}
+
+
+
+
+
+
+
+
+<div id="MainSentances" class="main-sentances" style="width:100vh; text-align:center; font-size: 3vw;" dir=@_localization.Getkey("lang_dir")>
+   @_localization.Getkey("str_main_message_1")
+    <br />
+        <span class="auto-type"> </span>
+    <br />
+</div>
+
+<section class="pt-4 pt-md-11">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+                <!-- Image -->
+                <img src="assets/img/illustrations/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..." data-aos="fade-up" data-aos-delay="100">
+
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+
+                <!-- Heading -->
+                <h1 class="display-3 text-center text-md-start">
+                    Welcome to <span class="text-primary">Landkit</span>. <br>
+                    Develop anything.
+                </h1>
+
+                <!-- Text -->
+                <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
+                    Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+                </p>
+
+                <!-- Buttons -->
+                <div class="text-center text-md-start">
+                    <a href="overview.html" class="btn btn-primary shadow lift me-1">
+                        View all pages <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+                    </a>
+                    <a href="docs/index.html" class="btn btn-primary-soft lift">
+                        Documentation
+                    </a>
+                </div>
+
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+
+
+<!-- https://github.com/mattboldt/typed.js/ -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed('.auto-type', {
+        stringsElement: '#typed-strings',
+        strings: [@Html.Raw(_localization.Getkey("str_main_message_part_2"))],
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 200,
+        startDelay: 100,
+        loop: true,
+        loopCount: Infinity,
+        showCursor: true,
+        cursorChar: '|',
+        autoInsertCss: true,
+        contentType: 'html',
+    });
+</script>
+
+
+

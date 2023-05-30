@@ -1,0 +1,37 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: "Noto Kufi Arabic", Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+
+    nav a {
+        display: block;
+        background-color: white;
+    }
+
+@media (min-width: 768px) {
+    nav a {
+        display: inline-block;
+    }
+}

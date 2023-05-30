@@ -1,0 +1,66 @@
+﻿@model Company
+
+<form method="post" asp-action="Delete">
+    <input asp-for="Id" hidden/>
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary"> Delete Category</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="CompanyName" ></label>
+            <input asp-for="CompanyName" disabled class="form-control" />
+            <span asp-validation-for="CompanyName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CompanyPhone"></label>
+            <input asp-for="CompanyPhone" disabled class="form-control" />
+            <span asp-validation-for="CompanyPhone" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="CompanyEmail"></label>
+            <input asp-for="CompanyEmail" disabled class="form-control" />
+            <span asp-validation-for="CompanyEmail" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="LookingFor"></label>
+            <input asp-for="LookingFor" disabled class="form-control" />
+            <span asp-validation-for="LookingFor" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Machine"></label>
+            <input asp-for="Machine" disabled class="form-control" />
+            <span asp-validation-for="Machine" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="RentPeriod"></label>
+            <input asp-for="RentPeriod" disabled class="form-control" />
+            <span asp-validation-for="RentPeriod" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="CompanyDescription"></label>
+            <input asp-for="CompanyDescription" disabled class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-danger style="width:150px">Delete</button>
+        <a asp-controller="Company" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Back to
+        </a>
+    </div>
+</form>
+@section Scripts {
+    @{
+        <partial anme="_ValidationScriptsPartial"></partial>
+
+    }
+}
+
+
+
+       
