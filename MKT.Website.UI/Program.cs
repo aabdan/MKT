@@ -7,6 +7,8 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Reflection;
 using MKT.Website.Services;
+using MKT.Website.UI.Middleware;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -91,17 +93,21 @@ app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocal
 
 
 
-
+//app.UseMiddleware<UrlComponentMiddleware>();
 
 
 
 app.UseAuthorization();
 
 
+
+app.MapControllerRoute(
+    "lang",
+    "{lang}/{controller}/{action}/{id?}", new { controller = "Home", action = "Main", lang="en-US" });
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Main}/{id?}");
-// pattern: "{controller=Funnel}/{action=BuildAppGuid}/{id?}");
+    pattern: "{controller}/{action}/{id?}");
 
 
 

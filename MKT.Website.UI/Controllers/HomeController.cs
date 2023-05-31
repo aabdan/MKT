@@ -12,9 +12,9 @@ using Microsoft.AspNetCore.Localization;
 
 namespace MKT.Website.Controllers
 {
-    [Route("")]
-    [Route("Home")]
-    [Route("{lang:regex(^$|ar|en|fr$)}/{controller=Home}/{action=Main}/{id?}")]
+    //[Route("")]
+    //[Route("Home")]
+    //[Route("{lang:regex(^$|ar|en|fr$)}/{controller=Home}/{action=Main}/{id?}")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -29,15 +29,17 @@ namespace MKT.Website.Controllers
 
 
         #region Localization
+        //[Route("{lang:regex(^$|ar|en|fr$)}/{controller=Home}/{action=ChangeLanguage}")]
         [Route("ChangeLanguage")]
-
-        public IActionResult ChangeLanguage(string culture)
+        public IActionResult ChangeLanguage(string culture, string returnUrl)
         {
             Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
                 CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
                 new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
 
-            return Redirect(Request.Headers["Referer"].ToString() ?? "/");
+            returnUrl = returnUrl.Replace("/en-US", "").Replace("/ar-AE", "").Replace("/fr-FR", "");
+
+            return Redirect($"/{culture}{returnUrl}");
         }
         #endregion
 
@@ -98,7 +100,7 @@ namespace MKT.Website.Controllers
             return PartialView();
         }
 
-        [Route("")]
+        //[Route("")]
         public IActionResult Main(string lang)
         {
 
@@ -107,6 +109,10 @@ namespace MKT.Website.Controllers
 
             //get culture information
             var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
+
+            //Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
+            //CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(lang)),
+                //new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
 
             ////For example --> browserLang = 'en-US'
             // currentCulture = Request.Headers["Accept-Language"].ToString().Split(";").FirstOrDefault()?.Split(",").FirstOrDefault();
