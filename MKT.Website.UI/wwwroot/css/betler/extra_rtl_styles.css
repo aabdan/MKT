@@ -87,9 +87,9 @@ span.error:after {
   padding: 6px 45px 0 0;
 }
 
-.form-control {
+/*.form-control {
   text-align: right;
-}
+}*/
 
 /*-------- 3.2 Show/hide password + Password Strenght --------*/
 input.form-control.hideShowPassword-field {

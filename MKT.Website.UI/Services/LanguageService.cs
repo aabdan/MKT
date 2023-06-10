@@ -4,9 +4,6 @@ using System.Reflection;
 
 namespace MKT.Website.Services
 {
-    /// <summary>
-    /// Dummy class to group shared resources
-    /// </summary>
     public class SharedResource
     {
     }
@@ -26,5 +23,6 @@ namespace MKT.Website.Services
         {
             return _localizer[key];
         }
+
     }
 }

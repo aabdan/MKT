@@ -88,14 +88,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseMiddleware<RedirectMiddleware>("technexus.com", "https://www.technexus.com");
 app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
-
-
-
-//app.UseMiddleware<UrlComponentMiddleware>();
-
-
 
 app.UseAuthorization();
 

@@ -17,6 +17,15 @@
     {
       "library": "jquery-localize@0.1.0",
       "destination": "wwwroot/lib/jquery-localize/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "bootstrap@5.3.0",
+      "destination": "wwwroot/bootstrap/",
+      "files": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.bundle.min.js"
+      ]
     }
   ]
 }

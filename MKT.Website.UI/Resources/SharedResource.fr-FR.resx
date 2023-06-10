@@ -123,14 +123,137 @@
   <data name="lang_dir" xml:space="preserve">
     <value>ltr</value>
   </data>
+  <data name="str-cyber-content" xml:space="preserve">
+    <value>Protection, défense et assurance, conformité aux risques et aux politiques</value>
+  </data>
+  <data name="str-cyber-title" xml:space="preserve">
+    <value>la cyber-sécurité</value>
+  </data>
+  <data name="str-design-content" xml:space="preserve">
+    <value>Construire le parcours utilisateur, l'expérience utilisateur et l'interface utilisateur</value>
+  </data>
+  <data name="str-design-title" xml:space="preserve">
+    <value>design d'interaction</value>
+  </data>
+  <data name="str-ecommerce-content" xml:space="preserve">
+    <value>Boutiques en ligne, intégration des paiements</value>
+  </data>
+  <data name="str-ecommerce-title" xml:space="preserve">
+    <value>commerce électronique</value>
+  </data>
+  <data name="str-it-content" xml:space="preserve">
+    <value>Planification, meilleures pratiques, services gérés, exécution</value>
+  </data>
+  <data name="str-it-title" xml:space="preserve">
+    <value>Conseil informatique</value>
+  </data>
+  <data name="str-mobile-content" xml:space="preserve">
+    <value>Développer iOS &amp; Applications Android natives et hybrides</value>
+  </data>
+  <data name="str-mobile-title" xml:space="preserve">
+    <value>développement mobile</value>
+  </data>
+  <data name="str-services-message" xml:space="preserve">
+    <value>Voici un aperçu de ce que nous pouvons faire</value>
+  </data>
+  <data name="str-title-clients" xml:space="preserve">
+    <value>Nos clients</value>
+  </data>
+  <data name="str-title-services" xml:space="preserve">
+    <value>Nos services</value>
+  </data>
+  <data name="str-title-technology" xml:space="preserve">
+    <value>nos technologies</value>
+  </data>
+  <data name="str-web-content" xml:space="preserve">
+    <value>Application Web, portails, plateformes et système sauvegardé</value>
+  </data>
+  <data name="str-web-title" xml:space="preserve">
+    <value>développement web</value>
+  </data>
   <data name="str_about" xml:space="preserve">
     <value>À propos de nous</value>
+  </data>
+  <data name="str_about_block1_content" xml:space="preserve">
+    <value>Technexus est conçu pour vous faciliter la vie. Variables, outils de construction, documentation et composants réutilisables.</value>
+  </data>
+  <data name="str_about_block1_title" xml:space="preserve">
+    <value>Conçu pour les développeurs</value>
+  </data>
+  <data name="str_about_block2_content" xml:space="preserve">
+    <value>Conçu avec les dernières tendances de conception à l'esprit. Technexus est moderne, simple et beau.</value>
+  </data>
+  <data name="str_about_block2_title" xml:space="preserve">
+    <value>Conçu pour être moderne</value>
+  </data>
+  <data name="str_about_block3_content" xml:space="preserve">
+    <value>Nous avons écrit de nombreux composants et outils, de sorte que vous n'ayez jamais à rétroconcevoir quoi que ce soit.</value>
+  </data>
+  <data name="str_about_block3_title" xml:space="preserve">
+    <value>Documentation pour les choses</value>
+  </data>
+  <data name="str_about_title_1" xml:space="preserve">
+    <value>Bienvenue à</value>
+  </data>
+  <data name="str_about_title_2" xml:space="preserve">
+    <value>TechNexus</value>
+  </data>
+  <data name="str_about_title_3" xml:space="preserve">
+    <value>Développer n'importe quoi.</value>
+  </data>
+  <data name="str_about_title_4" xml:space="preserve">
+    <value>Créez un site Web magnifique et moderne avec des composants Bootstrap flexibles créés à partir de zéro.</value>
+  </data>
+  <data name="str_btn_about1" xml:space="preserve">
+    <value>Voir toutes les pages</value>
+  </data>
+  <data name="str_btn_about2" xml:space="preserve">
+    <value>Documentation</value>
   </data>
   <data name="str_client" xml:space="preserve">
     <value>Clients</value>
   </data>
   <data name="str_contact" xml:space="preserve">
     <value>Contactez-nous</value>
+  </data>
+  <data name="str_contact_btn" xml:space="preserve">
+    <value>Envoyer maintenant</value>
+  </data>
+  <data name="str_contact_content" xml:space="preserve">
+    <value>Voulez-vous construire un produit technique et avez-vous besoin d'une consultation ou d'une demande ? Alors vous êtes au bon endroit. N'hésitez pas à nous contacter de l'une des manières suivantes</value>
+  </data>
+  <data name="str_contact_email" xml:space="preserve">
+    <value>Votre adresse e-mail</value>
+  </data>
+  <data name="str_contact_formemail" xml:space="preserve">
+    <value>Votre e-mail</value>
+  </data>
+  <data name="str_contact_mobile" xml:space="preserve">
+    <value>Mobile:</value>
+  </data>
+  <data name="str_contact_msg" xml:space="preserve">
+    <value>Votre message</value>
+  </data>
+  <data name="str_contact_name" xml:space="preserve">
+    <value>votre nom</value>
+  </data>
+  <data name="str_contact_ourmail" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="str_contact_phone" xml:space="preserve">
+    <value>le téléphone:</value>
+  </data>
+  <data name="str_contact_title" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="str_contact_title2" xml:space="preserve">
+    <value>nous sommes ravis de vous exciter</value>
+  </data>
+  <data name="str_contact_welcome" xml:space="preserve">
+    <value>Bienvenue</value>
+  </data>
+  <data name="str_contact_whatsapp" xml:space="preserve">
+    <value>WhatsApp:</value>
   </data>
   <data name="str_Get_connected" xml:space="preserve">
     <value>Rejoignez-nous sur les réseaux sociaux :</value>
@@ -146,6 +269,9 @@
   </data>
   <data name="str_service" xml:space="preserve">
     <value>Services</value>
+  </data>
+  <data name="str_technologies" xml:space="preserve">
+    <value>Technologies</value>
   </data>
   <data name="str_title" xml:space="preserve">
     <value>Tech Nexus - Abu Dhabi</value>

@@ -783,7 +783,7 @@ a#logo {
 /* 3.  COMMON */
 /*============================================================================================*/
 /*-------- 3.1 Forms --------*/
-.form-group {
+/*.form-group {
   margin-bottom: 1rem;
 }
 
@@ -831,10 +831,10 @@ a#logo {
 .input_style_2 .my-toggle:hover, .input_style_2 .my-toggle:focus {
   background-color: transparent;
   color: #434bdf;
-}
+}*/
 
 /* Checkbox style */
-.container_check {
+/*.container_check {
   display: block;
   position: relative;
   font-size: 14px;
@@ -909,10 +909,10 @@ a#logo {
 
 .container_check input:checked ~ .checkmark:after {
   display: block;
-}
+}*/
 
 /* Radio buttons */
-.container_radio {
+/*.container_radio {
   display: block;
   position: relative;
   font-size: 14px;
@@ -963,7 +963,7 @@ a#logo {
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+}*/
 
 /* Fileupload */
 .fileupload {
@@ -1082,9 +1082,6 @@ input[type=file]::-webkit-file-upload-button:focus, input[type=file].invalid::-w
 
 /*-------- 3.3 Misc --------*/
 .background-image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1093,10 +1090,10 @@ input[type=file]::-webkit-file-upload-button:focus, input[type=file].invalid::-w
 
 .opacity-mask {
   width: 100%;
-  height: 100%;
+  /*height: 100%;
   position: relative;
   left: 0;
-  top: 0;
+  top: 0;*/
   z-index: 2;
 }
 

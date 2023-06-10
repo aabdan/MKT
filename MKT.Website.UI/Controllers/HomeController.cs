@@ -12,9 +12,6 @@ using Microsoft.AspNetCore.Localization;
 
 namespace MKT.Website.Controllers
 {
-    //[Route("")]
-    //[Route("Home")]
-    //[Route("{lang:regex(^$|ar|en|fr$)}/{controller=Home}/{action=Main}/{id?}")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -29,7 +26,6 @@ namespace MKT.Website.Controllers
 
 
         #region Localization
-        //[Route("{lang:regex(^$|ar|en|fr$)}/{controller=Home}/{action=ChangeLanguage}")]
         [Route("ChangeLanguage")]
         public IActionResult ChangeLanguage(string culture, string returnUrl)
         {
@@ -87,12 +83,6 @@ namespace MKT.Website.Controllers
         {
             return View();
         }
-        [Route("ContactUs")]
-
-        public IActionResult ContactUs()
-        {
-            return PartialView("ContactUs");
-        }
 
         [Route("Default")]
         public IActionResult Default()
@@ -100,33 +90,11 @@ namespace MKT.Website.Controllers
             return PartialView();
         }
 
-        //[Route("")]
         public IActionResult Main(string lang)
         {
-
-            //throw new Exception("This is a test exception");
-
-
-            //get culture information
             var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
-
-            //Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
-            //CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(lang)),
-                //new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
-
-            ////For example --> browserLang = 'en-US'
-            // currentCulture = Request.Headers["Accept-Language"].ToString().Split(";").FirstOrDefault()?.Split(",").FirstOrDefault();
 
             return PartialView();
         }
-
-
-        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        //[Route("Error")]
-
-        //public IActionResult Error()
-        //{
-        //    return PartialView(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        //}
     }
 }

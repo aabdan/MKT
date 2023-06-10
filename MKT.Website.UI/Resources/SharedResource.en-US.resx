@@ -123,14 +123,140 @@
   <data name="lang_dir" xml:space="preserve">
     <value>ltr</value>
   </data>
+  <data name="str-clients-message" xml:space="preserve">
+    <value>Here is a glimpse of what we can do</value>
+  </data>
+  <data name="str-cyber-content" xml:space="preserve">
+    <value>Protect, Defense and Assurance, Risk and Policies compliance</value>
+  </data>
+  <data name="str-cyber-title" xml:space="preserve">
+    <value>cyber security</value>
+  </data>
+  <data name="str-design-content" xml:space="preserve">
+    <value>Building User journey, User Experience and User Interface</value>
+  </data>
+  <data name="str-design-title" xml:space="preserve">
+    <value>interaction design</value>
+  </data>
+  <data name="str-ecommerce-content" xml:space="preserve">
+    <value>Online Stores, Payment Integration</value>
+  </data>
+  <data name="str-ecommerce-title" xml:space="preserve">
+    <value>eCommerce</value>
+  </data>
+  <data name="str-it-content" xml:space="preserve">
+    <value>Plan, Best practices, Managed Services, Execution</value>
+  </data>
+  <data name="str-it-title" xml:space="preserve">
+    <value>IT Consultation</value>
+  </data>
+  <data name="str-mobile-content" xml:space="preserve">
+    <value>Developing iOS &amp;amp; Android Native and Hybrid Apps</value>
+  </data>
+  <data name="str-mobile-title" xml:space="preserve">
+    <value>mobile development</value>
+  </data>
+  <data name="str-services-message" xml:space="preserve">
+    <value>Here is a glimpse of what we can do</value>
+  </data>
+  <data name="str-title-clients" xml:space="preserve">
+    <value>Our Clients </value>
+  </data>
+  <data name="str-title-services" xml:space="preserve">
+    <value>Our Services</value>
+  </data>
+  <data name="str-title-technology" xml:space="preserve">
+    <value>Our Technologies</value>
+  </data>
+  <data name="str-web-content" xml:space="preserve">
+    <value>Web application, Portals, Platforms and Backed system</value>
+  </data>
+  <data name="str-web-title" xml:space="preserve">
+    <value>web development</value>
+  </data>
   <data name="str_about" xml:space="preserve">
     <value>About</value>
+  </data>
+  <data name="str_about_block1_content" xml:space="preserve">
+    <value>Technexus is built to make your life easier. Variables, build tooling, documentation, and reusable components.</value>
+  </data>
+  <data name="str_about_block1_title" xml:space="preserve">
+    <value>Built for developers</value>
+  </data>
+  <data name="str_about_block2_content" xml:space="preserve">
+    <value>Designed with the latest design trends in mind. Technexus feels modern, minimal, and beautiful.</value>
+  </data>
+  <data name="str_about_block2_title" xml:space="preserve">
+    <value>Designed to be modern</value>
+  </data>
+  <data name="str_about_block3_content" xml:space="preserve">
+    <value>We've written extensive components and tools, so you never have to reverse engineer anything.</value>
+  </data>
+  <data name="str_about_block3_title" xml:space="preserve">
+    <value>Documentation for things</value>
+  </data>
+  <data name="str_about_title_1" xml:space="preserve">
+    <value>Welcome to</value>
+  </data>
+  <data name="str_about_title_2" xml:space="preserve">
+    <value>TechNexus</value>
+  </data>
+  <data name="str_about_title_3" xml:space="preserve">
+    <value>Develop anything.</value>
+  </data>
+  <data name="str_about_title_4" xml:space="preserve">
+    <value>Build a beautiful, modern website with flexible Bootstrap components built from scratch.</value>
+  </data>
+  <data name="str_btn_about1" xml:space="preserve">
+    <value>View all pages</value>
+  </data>
+  <data name="str_btn_about2" xml:space="preserve">
+    <value>Documentation</value>
   </data>
   <data name="str_client" xml:space="preserve">
     <value>Clients</value>
   </data>
   <data name="str_contact" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="str_contact_btn" xml:space="preserve">
+    <value>Send Now</value>
+  </data>
+  <data name="str_contact_content" xml:space="preserve">
+    <value>Do you want to build a technical product and need a consultation or inquiry? Then you are in the right place. Do not hesitate to contact us in one of the following ways</value>
+  </data>
+  <data name="str_contact_email" xml:space="preserve">
+    <value>Your Email Address</value>
+  </data>
+  <data name="str_contact_formemail" xml:space="preserve">
+    <value>Your Email</value>
+  </data>
+  <data name="str_contact_mobile" xml:space="preserve">
+    <value>Mobile:</value>
+  </data>
+  <data name="str_contact_msg" xml:space="preserve">
+    <value>Your Message</value>
+  </data>
+  <data name="str_contact_name" xml:space="preserve">
+    <value>Your Name</value>
+  </data>
+  <data name="str_contact_ourmail" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="str_contact_phone" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="str_contact_title" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="str_contact_title2" xml:space="preserve">
+    <value>we are excited to excite you</value>
+  </data>
+  <data name="str_contact_welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="str_contact_whatsapp" xml:space="preserve">
+    <value>WhatsApp:</value>
   </data>
   <data name="str_Get_connected" xml:space="preserve">
     <value>Get connected with us on social networks:</value>
@@ -146,6 +272,9 @@
   </data>
   <data name="str_service" xml:space="preserve">
     <value>Services</value>
+  </data>
+  <data name="str_technologies" xml:space="preserve">
+    <value>Technologies</value>
   </data>
   <data name="str_title" xml:space="preserve">
     <value>Tech Nexus - Abu Dhabi</value>
