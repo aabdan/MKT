@@ -66,7 +66,13 @@
     </noscript>
 
         <div id="particles-js" >
-       
+        <div>
+            <a href="https://wa.me/971507746099?text=مرحباً %20" class="float" target="_blank">
+                <i class="fa-brands fa-whatsapp my-float"></i>
+            </a>
+
+            <Partial name="_MainSliderDataPartial" />
+        </div>
         </div>
 
     <script src="~/js/particles/lib/particles.min.js"></script>
@@ -96,7 +102,6 @@
 
                     <div class="dropdown" dir=@_localization.Getkey("lang_dir")>
 
-
                         <a class="nav-link dropdown-toggle" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             @Thread.CurrentThread.CurrentUICulture.Parent.NativeName <i class="fas fa-globe"></i>
                         </a>
@@ -105,6 +110,7 @@
                             <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-united-states flag"></i> English</a></li>
                             <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="fr-FR" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-france flag"></i> français</a></li>
                         </ul>
+
                     </div>
 
                 </div>
@@ -114,15 +120,9 @@
     </header>
 
 
-    <div>
-        <a href="https://wa.me/971507746099?text=مرحباً %20" class="float" target="_blank">
-            <i class="fa-brands fa-whatsapp my-float"></i>
-        </a>
-
-        <Partial name="_MainSliderDataPartial" />
-    </div>
     
-    <div style="margin-top:420px">
+    
+    <div>
         @RenderBody()
     </div>
 

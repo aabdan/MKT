@@ -7,27 +7,23 @@ namespace MKT.Website.Models
     {
         [Key]
         public int Id { get; set; }
-        [DisplayName("الاسم*")]
-        [Required(ErrorMessage = "يرجى كتابة الاسم")]
-        [MinLength(3, ErrorMessage = "يرجى كتابة الاسم الكامل")]
-        [MaxLength(50, ErrorMessage = "يرجى التحقق من الاسم")]
+        //[DisplayName("الاسم*")]
+        [Required(ErrorMessage = "Please Enter your Name")]
+        [MinLength(3, ErrorMessage = "Please Enter your FullName correctly")]
+        [MaxLength(50, ErrorMessage = "Please Check your Name")]
         public string? PersonName { get; set; }
 
-        [DisplayName("الهاتف*")]
-        [Required(ErrorMessage = "يرجى كتابة الهاتف")]
-        [MinLength(6, ErrorMessage = "يرجى كتابة رقم الهاتف بشكل صحيح")]
-        [MaxLength(12, ErrorMessage = "يرجى التحقق من الرقم")]
-        [Phone(ErrorMessage = "يرجى كتابة رقم الهاتف بشكل صحيح")]
+        [Required(ErrorMessage = "Please Enter your Phone")]
+        [MinLength(6, ErrorMessage = "Please Enter your Phone correctly")]
+        [MaxLength(12, ErrorMessage = "Please check your Phone")]
+        [Phone(ErrorMessage = "Please Enter your Phone correctly")]
         public string? PersonPhone { get; set; }
 
-        [DisplayName("البريد الإلكتروني*")]
-        [Required(ErrorMessage = "يرجى كتابة البريد الإلكتروني")]
-        [MinLength(5, ErrorMessage = "يرجى كتابة بريدك الإلكتروني بشكل صحيح")]
-        [MaxLength(50, ErrorMessage = "تحقق من بريدك الإلكتروني")]
-        [EmailAddress(ErrorMessage = "يرجى ادخال بريد إلكتروني صحيح")]
+        [Required(ErrorMessage = "Please Enter your E-mail")]
+        [MinLength(5, ErrorMessage = "Please Enter your E-mail correctly")]
+        [MaxLength(50, ErrorMessage = "Please check your E-mail")]
+        [EmailAddress(ErrorMessage = "Please Enter your E-mail correctly")]
         public string? PersonEmail { get; set; }
-
-        [DisplayName("الإشتراك برسائل البريد الإلكتروني")]
         public string? PersonSubscription { get; set; }
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
 

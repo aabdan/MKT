@@ -216,6 +216,9 @@
   <data name="str_contact" xml:space="preserve">
     <value>اتصل بنا</value>
   </data>
+  <data name="str_contact_accept" xml:space="preserve">
+    <value>أوافق على</value>
+  </data>
   <data name="str_contact_btn" xml:space="preserve">
     <value>ارسل الان</value>
   </data>
@@ -227,6 +230,9 @@
   </data>
   <data name="str_contact_formemail" xml:space="preserve">
     <value>بريدك الالكتروني</value>
+  </data>
+  <data name="str_contact_join" xml:space="preserve">
+    <value>الإشتراك برسائل البريد الإلكتروني</value>
   </data>
   <data name="str_contact_mobile" xml:space="preserve">
     <value>موبيل:</value>
@@ -243,11 +249,14 @@
   <data name="str_contact_phone" xml:space="preserve">
     <value>الهاتف:</value>
   </data>
+  <data name="str_contact_phoneNo" xml:space="preserve">
+    <value>هاتفك</value>
+  </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>اتصل بنا</value>
   </data>
   <data name="str_contact_title2" xml:space="preserve">
-    <value>نحن متحمسون لإثارتك</value>
+    <value>لتحميل مراحل بناء و تطوير منتج تقني</value>
   </data>
   <data name="str_contact_welcome" xml:space="preserve">
     <value>اهلاً بك</value>

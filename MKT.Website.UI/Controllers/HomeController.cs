@@ -33,9 +33,14 @@ namespace MKT.Website.Controllers
                 CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
                 new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
 
-            returnUrl = returnUrl.Replace("/en-US", "").Replace("/ar-AE", "").Replace("/fr-FR", "");
+            returnUrl = returnUrl.Replace("/en-US", "").Replace("/ar-AE", "").Replace("/fr-FR", "")
+                                 .Replace("/ar", "").Replace("/fr", "");
+            if (culture.ToLower().Contains("en"))
+            {
+                return Redirect(returnUrl);
+            }
 
-            return Redirect($"/{culture}{returnUrl}");
+            return Redirect($"/{culture.Substring(0,2)}{returnUrl}");
         }
         #endregion
 

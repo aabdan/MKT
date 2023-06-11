@@ -216,6 +216,9 @@
   <data name="str_contact" xml:space="preserve">
     <value>Contactez-nous</value>
   </data>
+  <data name="str_contact_accept" xml:space="preserve">
+    <value>Accepter</value>
+  </data>
   <data name="str_contact_btn" xml:space="preserve">
     <value>Envoyer maintenant</value>
   </data>
@@ -227,6 +230,9 @@
   </data>
   <data name="str_contact_formemail" xml:space="preserve">
     <value>Votre e-mail</value>
+  </data>
+  <data name="str_contact_join" xml:space="preserve">
+    <value>Abonnez-vous aux e-mails</value>
   </data>
   <data name="str_contact_mobile" xml:space="preserve">
     <value>Mobile:</value>
@@ -243,11 +249,14 @@
   <data name="str_contact_phone" xml:space="preserve">
     <value>le téléphone:</value>
   </data>
+  <data name="str_contact_phoneNo" xml:space="preserve">
+    <value>Nos téléphone</value>
+  </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>Contactez-nous</value>
   </data>
   <data name="str_contact_title2" xml:space="preserve">
-    <value>nous sommes ravis de vous exciter</value>
+    <value>Pour télécharger les étapes de construction et de développement d'un produit technique</value>
   </data>
   <data name="str_contact_welcome" xml:space="preserve">
     <value>Bienvenue</value>
