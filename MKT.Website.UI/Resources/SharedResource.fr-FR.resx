@@ -252,6 +252,9 @@
   <data name="str_contact_phoneNo" xml:space="preserve">
     <value>Nos téléphone</value>
   </data>
+  <data name="str_contact_thanks" xml:space="preserve">
+    <value>Merci d'avoir téléchargé le Guide technique de création de produit</value>
+  </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>Contactez-nous</value>
   </data>

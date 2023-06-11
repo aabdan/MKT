@@ -42,13 +42,10 @@ namespace MKT.Website.UI.Controllers
             {
                 _db.Persons.Add(obj);
                 _db.SaveChanges();
-                TempData["success"] = "شكراً لتحميلك دليل بناء منتج تقني";
 
-                return RedirectToAction("BuildAppGuidConfirmation");
+                return Ok();
             }
             return View(obj);
-
-
         }
     }
 }

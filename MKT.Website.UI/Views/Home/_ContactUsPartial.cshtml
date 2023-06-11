@@ -14,19 +14,19 @@
                         <p class="lead" dir=@_localization.Getkey("lang_dir")>@_localization.Getkey("str_contact_title2")</p>
                         <div class=" border-bottom border-5" style="width: 100px; "> </div>
                     </div>
-                    <form asp-action="Create" asp-controller="Funnel" method="post" class="  p-5 pt-4 px-3 rounded-2" style="background-color:rgb(152 193 232 / 60%)">
+                    <form id="contact-form" method="post" class="  p-5 pt-4 px-3 rounded-2" style="background-color:rgb(152 193 232 / 60%)">
                         
                         <div class="mb-3 " >
-                            <input asp-for="PersonName" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_name")" />
+                            <input asp-for="PersonName" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_name")" dir=@_localization.Getkey("lang_dir")/>
                             <span asp-validation-for="PersonName" class="text-danger d-block mt-1"></span>
                         </div>
                         <div class="mb-3">
-                            <input asp-for="PersonPhone" type="tel" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_phoneNo")" />
+                            <input asp-for="PersonPhone" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_phoneNo")" dir=@_localization.Getkey("lang_dir")/>
                             <span asp-validation-for="PersonPhone" class="text-danger d-block mt-1"></span>
 
                         </div>
                         <div class="mb-3">
-                            <input asp-for="PersonEmail" type="email" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_formemail")"  />
+                            <input asp-for="PersonEmail" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_formemail")" dir=@_localization.Getkey("lang_dir") />
                             <span asp-validation-for="PersonEmail" class="text-danger d-block mt-1 "></span>
 
                         </div>
@@ -47,6 +47,8 @@
                         </div>
 
                 </form>
+
+                    
            </div>
 
            <div class="col-12 col-md-6  contact">
@@ -101,9 +103,41 @@
                    </div>
            </div>
         </div>
+        <div class="row">
+                <div id="success-message" class="alert alert-success mt-3 text-center fs-3 p-2" style="display: none;">@_localization.Getkey("str_contact_thanks")</div>
+        </div>
     </div>
 </section>
 </div>
 
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    // Handle form submission using AJAX
+    $(function () {
+        $('#contact-form').submit(function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Serialize the form data
+            var formData = $(this).serialize();
+
+            // Send the AJAX request
+            $.ajax({
+                url: '@Url.Action("Create", "Funnel")',
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    $('#success-message').show();
+                    $('#contact-form')[0].reset(); // Reset the form
+                    setTimeout(function () {
+                        $('#success-message').fadeOut();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        });
+    });
+</script>
  
 

@@ -255,6 +255,9 @@
   <data name="str_contact_phoneNo" xml:space="preserve">
     <value>Your Phone</value>
   </data>
+  <data name="str_contact_thanks" xml:space="preserve">
+    <value>Thank you for downloading the Technical Product Build Guide</value>
+  </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>Contact Us</value>
   </data>

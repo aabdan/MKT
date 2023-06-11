@@ -1,4 +1,4 @@
-let marker = "";
+var marker = "";
 let map = "";
 async function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {

@@ -252,6 +252,9 @@
   <data name="str_contact_phoneNo" xml:space="preserve">
     <value>هاتفك</value>
   </data>
+  <data name="str_contact_thanks" xml:space="preserve">
+    <value>شكراً لتحميلك دليل بناء منتج تقني</value>
+  </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>اتصل بنا</value>
   </data>
