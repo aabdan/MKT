@@ -112,22 +112,19 @@
 
 <script src="/lib/jquery/dist/jquery.min.js"></script>
 <script>
-    // Handle form submission using AJAX
     $(function () {
         $('#contact-form').submit(function (event) {
-            event.preventDefault(); // Prevent the default form submission behavior
+            event.preventDefault(); 
 
-            // Serialize the form data
             var formData = $(this).serialize();
 
-            // Send the AJAX request
             $.ajax({
                 url: '@Url.Action("Create", "Funnel")',
                 type: 'POST',
                 data: formData,
                 success: function (response) {
                     $('#success-message').show();
-                    $('#contact-form')[0].reset(); // Reset the form
+                    $('#contact-form')[0].reset(); 
                     setTimeout(function () {
                         $('#success-message').fadeOut();
                     }, 5000);
