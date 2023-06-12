@@ -135,6 +135,12 @@
   <data name="str-design-title" xml:space="preserve">
     <value>design d'interaction</value>
   </data>
+  <data name="str-digital-content" xml:space="preserve">
+    <value>Services de marketing numérique tels que le référencement (SEO), les médias sociaux (SMM) et le paiement par clic (PPC).</value>
+  </data>
+  <data name="str-digital-title" xml:space="preserve">
+    <value>Marketing numérique</value>
+  </data>
   <data name="str-ecommerce-content" xml:space="preserve">
     <value>Boutiques en ligne, intégration des paiements</value>
   </data>
@@ -209,6 +215,9 @@
   </data>
   <data name="str_btn_about2" xml:space="preserve">
     <value>Documentation</value>
+  </data>
+  <data name="str_btn_learn_more" xml:space="preserve">
+    <value>En savoir plus</value>
   </data>
   <data name="str_client" xml:space="preserve">
     <value>Clients</value>

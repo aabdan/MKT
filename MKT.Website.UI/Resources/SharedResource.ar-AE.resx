@@ -124,7 +124,7 @@
     <value>rtl</value>
   </data>
   <data name="str-cyber-content" xml:space="preserve">
-    <value>الحماية والدفاع والتأمين والامتثال للمخاطر والسياسات</value>
+    <value>الحماية وتأمين الخدمات الإلكترونية</value>
   </data>
   <data name="str-cyber-title" xml:space="preserve">
     <value>الأمن الإلكتروني</value>
@@ -134,6 +134,12 @@
   </data>
   <data name="str-design-title" xml:space="preserve">
     <value>تصميم تفاعلي</value>
+  </data>
+  <data name="str-digital-content" xml:space="preserve">
+    <value>خدمات التسويق الرقمي عبر جوجل ادز والسوشيل ميديا</value>
+  </data>
+  <data name="str-digital-title" xml:space="preserve">
+    <value>التسويق الرقمي</value>
   </data>
   <data name="str-ecommerce-content" xml:space="preserve">
     <value>المتاجر عبر الإنترنت ، تكامل الدفع</value>
@@ -145,10 +151,10 @@
     <value>التخطيط وأفضل الممارسات والخدمات المدارة والتنفيذ</value>
   </data>
   <data name="str-it-title" xml:space="preserve">
-    <value>استشارات تكنولوجيا المعلومات</value>
+    <value>الإستشارات التقنية</value>
   </data>
   <data name="str-mobile-content" xml:space="preserve">
-    <value>تطوير تطبيقات ايو اس و الاندرويد الأصلية والمختلطة</value>
+    <value>تطوير تطبيقات ايو اس و الاندرويد </value>
   </data>
   <data name="str-mobile-title" xml:space="preserve">
     <value>تطوير المحمول</value>
@@ -163,34 +169,34 @@
     <value>خدماتنا</value>
   </data>
   <data name="str-title-technology" xml:space="preserve">
-    <value>تقنياتنا</value>
+    <value>التقنيات المستخدمة</value>
   </data>
   <data name="str-web-content" xml:space="preserve">
-    <value>تطبيق الويب والبوابات والمنصات والنظام المدعوم</value>
+    <value>تطبيقات الويب والبوابات والمنصات الإلكترونية و الأنظمة المخصصة</value>
   </data>
   <data name="str-web-title" xml:space="preserve">
-    <value>تطوير الشبكة</value>
+    <value>تطبيقات الويب</value>
   </data>
   <data name="str_about" xml:space="preserve">
     <value>عن تك نكزس</value>
   </data>
   <data name="str_about_block1_content" xml:space="preserve">
-    <value>تم تصميم تك نكزس لجعل حياتك أسهل. المتغيرات وأدوات البناء والتوثيق والمكونات القابلة لإعادة الاستخدام.</value>
+    <value>An Emirati company based in Abu Dhabi that focuses on technology solutions and digital transformation.</value>
   </data>
   <data name="str_about_block1_title" xml:space="preserve">
-    <value>بنيت للمطورين</value>
+    <value>عن تك نكزس</value>
   </data>
   <data name="str_about_block2_content" xml:space="preserve">
-    <value>تم تصميمه مع وضع أحدث اتجاهات التصميم في الاعتبار. تك نكزس يشعر بالحداثة والبساطة والجمال.</value>
+    <value>We believe that the technology products industry should be efficient and beneficial to businesses and services, enhancing operations and serving humanity.</value>
   </data>
   <data name="str_about_block2_title" xml:space="preserve">
-    <value>مصممة لتكون حديثة</value>
+    <value>رؤيتنا</value>
   </data>
   <data name="str_about_block3_content" xml:space="preserve">
-    <value>لقد كتبنا مكونات وأدوات واسعة النطاق ، لذلك لن تضطر أبدًا إلى إجراء هندسة عكسية لأي شيء.</value>
+    <value>ان نصبح رواد التحول الرقمي في المنطقة.</value>
   </data>
   <data name="str_about_block3_title" xml:space="preserve">
-    <value>توثيق للأشياء</value>
+    <value>رسالتنا</value>
   </data>
   <data name="str_about_title_1" xml:space="preserve">
     <value>مرحباً بك في</value>
@@ -199,16 +205,19 @@
     <value>تك نكزس</value>
   </data>
   <data name="str_about_title_3" xml:space="preserve">
-    <value>طور أي شيء</value>
+    <value>طور أعمالك بالتقنية</value>
   </data>
   <data name="str_about_title_4" xml:space="preserve">
-    <value>أنشئ موقعًا جميلًا وعصريًا باستخدام مكونات بوتستراب المرنة المبنية من البداية.</value>
+    <value>هل تريد ان تطوير أعمالك بواسطة التقنية، سواءً كان ذلك بإنشاء موقع إلكتروني أو تطبيق مخصص لنشاطك التجاري؟ نحن نقدم لك إمكانية إنشاء موقع أو تطبيق جميل وعصري باستخدام أحدث التقنيات والتصميمات الحديثة.</value>
   </data>
   <data name="str_btn_about1" xml:space="preserve">
     <value>عرض كل الصفحات</value>
   </data>
   <data name="str_btn_about2" xml:space="preserve">
     <value>توثيق</value>
+  </data>
+  <data name="str_btn_learn_more" xml:space="preserve">
+    <value>إعرف أكثر</value>
   </data>
   <data name="str_client" xml:space="preserve">
     <value>عملاؤنا</value>
@@ -223,7 +232,7 @@
     <value>ارسل الان</value>
   </data>
   <data name="str_contact_content" xml:space="preserve">
-    <value>هل تريد بناء بناء منتج تقني وتحتاج الى استشارة او استفسار إذاً انت في المكان الصحيح، لا تتردد بالتواصل معنا باحد الطرق التالية</value>
+    <value>هل تريد بناء منتج تقني ولديك إستفسار او تحتاج الى استشارة إذاً انت في المكان الصحيح، لا تتردد بالتواصل معنا</value>
   </data>
   <data name="str_contact_email" xml:space="preserve">
     <value>عنوان بريدك  الإلكتروني</value>

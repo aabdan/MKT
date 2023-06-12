@@ -40,7 +40,7 @@ namespace MKT.Website.Controllers
                 return Redirect(returnUrl);
             }
 
-            return Redirect($"/{culture.Substring(0,2)}{returnUrl}");
+            return Redirect($"/{culture.Substring(0, 2)}{returnUrl}");
         }
         #endregion
 

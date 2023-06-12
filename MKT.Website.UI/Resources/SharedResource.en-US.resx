@@ -138,6 +138,12 @@
   <data name="str-design-title" xml:space="preserve">
     <value>interaction design</value>
   </data>
+  <data name="str-digital-content" xml:space="preserve">
+    <value>Digital Marketing Services like Search Engine Optimization(SEO),Socila Media Marketing (SMM),Pay Per Click (PPC)</value>
+  </data>
+  <data name="str-digital-title" xml:space="preserve">
+    <value>Digital Marketing</value>
+  </data>
   <data name="str-ecommerce-content" xml:space="preserve">
     <value>Online Stores, Payment Integration</value>
   </data>
@@ -181,19 +187,19 @@
     <value>Technexus is built to make your life easier. Variables, build tooling, documentation, and reusable components.</value>
   </data>
   <data name="str_about_block1_title" xml:space="preserve">
-    <value>Built for developers</value>
+    <value>About</value>
   </data>
   <data name="str_about_block2_content" xml:space="preserve">
-    <value>Designed with the latest design trends in mind. Technexus feels modern, minimal, and beautiful.</value>
+    <value>To become pioneers in digital transformation in the region.</value>
   </data>
   <data name="str_about_block2_title" xml:space="preserve">
-    <value>Designed to be modern</value>
+    <value>VISION</value>
   </data>
   <data name="str_about_block3_content" xml:space="preserve">
-    <value>We've written extensive components and tools, so you never have to reverse engineer anything.</value>
+    <value>We believe that the technology products industry should be efficient and beneficial to businesses and services, enhancing operations and serving humanity.</value>
   </data>
   <data name="str_about_block3_title" xml:space="preserve">
-    <value>Documentation for things</value>
+    <value>MISSION</value>
   </data>
   <data name="str_about_title_1" xml:space="preserve">
     <value>Welcome to</value>
@@ -212,6 +218,9 @@
   </data>
   <data name="str_btn_about2" xml:space="preserve">
     <value>Documentation</value>
+  </data>
+  <data name="str_btn_learn_more" xml:space="preserve">
+    <value>Learn more</value>
   </data>
   <data name="str_client" xml:space="preserve">
     <value>Clients</value>
