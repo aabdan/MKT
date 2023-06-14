@@ -101,8 +101,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller}/{action}/{id?}",
-    defaults: new {lang="ar-AE"});
+    pattern: "{controller}/{action}/{id?}");
 
 
 

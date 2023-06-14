@@ -35,11 +35,8 @@ namespace MKT.Website.Controllers
                 new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
 
             returnUrl = returnUrl.Replace("/en-US", "").Replace("/ar-AE", "").Replace("/fr-FR", "")
-                                 .Replace("/Ar", "").Replace("/Fr", "");
-            if (culture.ToLower().Contains("en"))
-            {
-                return Redirect(returnUrl);
-            }
+                                 .Replace("/En","").Replace("/Ar", "").Replace("/Fr", "");
+           
 
             string languageCode = culture.Substring(0, 2);
             languageCode = languageCode.Substring(0, 1).ToUpper() + languageCode.Substring(1);
