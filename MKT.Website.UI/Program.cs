@@ -37,7 +37,6 @@ builder.Services.Configure<RequestLocalizationOptions>(
                            new CultureInfo("ar-AE"),
                            new CultureInfo("en-US"),
                            new CultureInfo("fr-FR")
-
             };
 
         options.DefaultRequestCulture = new RequestCulture(culture: "ar-AE", uiCulture: "ar-AE");
@@ -87,9 +86,10 @@ app.UseHsts();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
+
 app.UseRouting();
 app.UseMiddleware<RedirectMiddleware>("technexus.com", "https://www.technexus.com");
-app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
 app.UseAuthorization();
 
@@ -97,11 +97,12 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     "lang",
-    "{lang}/{controller}/{action}/{id?}", new { controller = "Home", action = "Main", lang = "en-US" });
+    "{lang}/{controller}/{action}/{id?}", new { controller = "Home", action = "Main", lang = "ar-AE" });
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller}/{action}/{id?}");
+    pattern: "{controller}/{action}/{id?}",
+    defaults: new {lang="ar-AE"});
 
 
 
