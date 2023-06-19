@@ -123,6 +123,9 @@
   <data name="lang_dir" xml:space="preserve">
     <value>ltr</value>
   </data>
+  <data name="str-animation-direction" xml:space="preserve">
+    <value>animation-direction:normal</value>
+  </data>
   <data name="str-clients-message" xml:space="preserve">
     <value>Here is a glimpse of what we can do</value>
   </data>

@@ -4,16 +4,20 @@
     ViewData["Title"] = _localization.Getkey("str_title");
 }
 
+<div dir=@_localization.Getkey("lang_dir")>
 <Partial name="_AboutPartial"/>
 
 <Partial name="_ServicesPartial"/>
-
+</div>
 <Partial name="_TechnologiesPartial" />
 
 <Partial name="_ClientsPartial"/>
 
+<div dir=@_localization.Getkey("lang_dir")>
 
 <Partial name="_ContactUsPartial" />
+</div>
+
 
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

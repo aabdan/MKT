@@ -123,6 +123,9 @@
   <data name="lang_dir" xml:space="preserve">
     <value>rtl</value>
   </data>
+  <data name="str-animation-direction" xml:space="preserve">
+    <value>animation-direction:reverse</value>
+  </data>
   <data name="str-cyber-content" xml:space="preserve">
     <value>الحماية وتأمين الخدمات الإلكترونية</value>
   </data>
@@ -181,13 +184,13 @@
     <value>عن تك نكزس</value>
   </data>
   <data name="str_about_block1_content" xml:space="preserve">
-    <value>An Emirati company based in Abu Dhabi that focuses on technology solutions and digital transformation.</value>
+    <value>شركة إماراتية مقرها أبوظبي تركز على الحلول التقنية والتحول الرقمي.</value>
   </data>
   <data name="str_about_block1_title" xml:space="preserve">
     <value>عن تك نكزس</value>
   </data>
   <data name="str_about_block2_content" xml:space="preserve">
-    <value>We believe that the technology products industry should be efficient and beneficial to businesses and services, enhancing operations and serving humanity.</value>
+    <value>نعتقد أن صناعة المنتجات التقنية يجب أن تكون فعالة ومفيدة للأعمال والخدمات ، وتعزز العمليات وخدمة الإنسانية.</value>
   </data>
   <data name="str_about_block2_title" xml:space="preserve">
     <value>رؤيتنا</value>
@@ -233,6 +236,9 @@
   </data>
   <data name="str_contact_content" xml:space="preserve">
     <value>هل تريد بناء منتج تقني ولديك إستفسار او تحتاج الى استشارة إذاً انت في المكان الصحيح، لا تتردد بالتواصل معنا</value>
+  </data>
+  <data name="str_contact_content_main" xml:space="preserve">
+    <value>لديك فكرة وتريد بناء منتج تقني لها اولديك إستفسار و تحتاج الى استشارة تقنية إذاً انت في المكان الصحيح، لا تتردد بالتواصل معنا</value>
   </data>
   <data name="str_contact_email" xml:space="preserve">
     <value>عنوان بريدك  الإلكتروني</value>
