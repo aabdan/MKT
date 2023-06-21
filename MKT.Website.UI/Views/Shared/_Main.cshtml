@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <title>@ViewBag.Title</title>
-    <meta name="description" content="Tech Nexus Home Page.">
-    <meta name="author" content="Ahmad Abdan" />
+    <meta name="description" content=@_localization.Getkey("str-meta-description")>
+    <meta name="author" content="Tech Nexus" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="~/css/particles/style.css" rel="stylesheet" media="screen" />
     <link href="~/css/site.css" rel="stylesheet" />
@@ -30,8 +30,6 @@
     <!-- Latest compiled JavaScript -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-
- 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
@@ -54,10 +52,6 @@
     <script src="~/lib/jquery/jquery.slim.min.js"></script>
     <script src="~/jquery-validate/jquery.validate.min.js"></script>
     <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-    <script src="~/js/map.js"></script>
-    <script async
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_zOsSF89_TDKfYKTkbEkoKGVEu9fmGH4&libraries=places&callback=initMap">
-    </script>
 
 </head>
 <body>
@@ -67,7 +61,7 @@
 
         <div id="particles-js" >
         <div>
-            <a href="https://wa.me/971507746099?text=مرحباً %20" class="float" target="_blank">
+            <a href="https://wa.me/971507746099?text=مرحباً %20" title="whatsapp" class="float" target="_blank">
                 <i class="fa-brands fa-whatsapp my-float"></i>
             </a>
 
@@ -81,7 +75,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top" dir=@_localization.Getkey("lang_dir") style=" font-size: 2vw;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#" title="technexus-logo">
                     <img src=@_localization.Getkey("str_logo") alt="Tech Nexus Logo" style="max-height:10vh;width:300px" />
                 </a>
 
@@ -92,23 +86,23 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
 
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#about" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_about") </a></li>
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#services" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_service")</a></li>
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#technologies" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_technologies")</a></li>
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#clients" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_client")</a></li>
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#contactus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_contact")</a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#about" title="about-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_about") </a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#services" title="services-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_service")</a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#technologies" title="technologies-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_technologies")</a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#clients" title="clients-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_client")</a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4" href="#contactus" title="contactus-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_contact")</a></li>
 
                     </ul>
 
                     <div class="dropdown" dir=@_localization.Getkey("lang_dir")>
 
-                        <a class="nav-link dropdown-toggle" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a title="language-selection" class="nav-link dropdown-toggle" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             @Thread.CurrentThread.CurrentUICulture.Parent.NativeName <i class="fas fa-globe"></i>
                         </a>
                         <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                            <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="ar-AE" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-united-arab-emirates flag"></i> العربية</a></li>
-                            <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-united-states flag"></i> English</a></li>
-                            <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="fr-FR" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-france flag"></i> français</a></li>
+                            <li><a title="Change-Language-ar-AE" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="ar-AE" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-united-arab-emirates flag"></i> العربية</a></li>
+                            <li><a title="Change-Language-en-US" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-united-states flag"></i> English</a></li>
+                            <li><a title="Change-Language-fr-FR" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="fr-FR" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-france flag"></i> français</a></li>
                         </ul>
 
                     </div>
@@ -137,19 +131,19 @@
             <!-- Left -->
             <!-- Right -->
             <div>
-                <a href="https://www.facebook.com/TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#30A2FF'" onmouseout="this.style.color='#6c757d'">
+                <a href="https://www.facebook.com/TechNexus.ae" title="facebook-TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#30A2FF'" onmouseout="this.style.color='#6c757d'">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://www.twitter.com/TechNexusae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#00ACEE'" onmouseout="this.style.color='#6c757d'">
+                <a href="https://www.twitter.com/TechNexusae" title="twitter-TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#00ACEE'" onmouseout="this.style.color='#6c757d'">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="https://www.google.com/search?authuser=0&hl=en&gl=ae&output=search&q=Tech+Nexus+Technology+Solutions+-+%D8%AA%D9%8A%D9%83+%D9%86%D9%83%D8%B2%D8%B3+%D9%84%D9%84%D8%AD%D9%84%D9%88%D9%84+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9&ludocid=7684089176108624910&gsas=1&lsig=AB86z5VXZo19CRcSqtkQ3z_JItSl&ved=1i%3A3%2Ct%3A109124%2Ce%3A2%2Cp%3AinByZIqgHYmQkdUP_uSd6A4%3A53#" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#0F9D58'" onmouseout="this.style.color='#6c757d'">
+                <a href="https://www.google.com/search?authuser=0&hl=en&gl=ae&output=search&q=Tech+Nexus+Technology+Solutions+-+%D8%AA%D9%8A%D9%83+%D9%86%D9%83%D8%B2%D8%B3+%D9%84%D9%84%D8%AD%D9%84%D9%88%D9%84+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9&ludocid=7684089176108624910&gsas=1&lsig=AB86z5VXZo19CRcSqtkQ3z_JItSl&ved=1i%3A3%2Ct%3A109124%2Ce%3A2%2Cp%3AinByZIqgHYmQkdUP_uSd6A4%3A53#" title="google-map-TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#0F9D58'" onmouseout="this.style.color='#6c757d'">
                     <i class="fab fa-google"></i>
                 </a>
-                <a href="https://www.instagram.com/TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#FF0060'" onmouseout="this.style.color='#6c757d'">
-                    <i class="fab fa-instagram"></i>
+                <a href="https://www.instagram.com/TechNexus.ae" title="instagram-TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#FF0060'" onmouseout="this.style.color='#6c757d'">
+                    <i class="fab fa-instagram"></i>    
                 </a>
-                <a href="https://www.linkedin.com/company/tech-nexus-ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#30A2FF'" onmouseout="this.style.color='#6c757d'">
+                <a href="https://www.linkedin.com/company/tech-nexus-ae" title="linkedin-tech-nexus-ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#30A2FF'" onmouseout="this.style.color='#6c757d'">
                     <i class="fab fa-linkedin"></i>
                 </a>
               
@@ -161,7 +155,7 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);" >
             © 2023 
-            <a class=" fw-bold" style="color: rgb(0, 84, 166);" href="https://technexus.ae/">@_localization.Getkey("str_title")</a>
+            <a class=" fw-bold" style="color: rgb(0, 84, 166);" title="technexus-site-url" href="https://technexus.ae/">@_localization.Getkey("str_title")</a>
         </div>
         <!-- Copyright -->
     </footer>

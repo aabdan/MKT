@@ -9,7 +9,6 @@ using Microsoft.Extensions.Localization;
 using Microsoft.AspNetCore.Mvc.Localization;
 using MKT.Website.Services;
 using Microsoft.AspNetCore.Localization;
-using System.Globalization;
 
 namespace MKT.Website.Controllers
 {
@@ -35,12 +34,13 @@ namespace MKT.Website.Controllers
                 new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
 
             returnUrl = returnUrl.Replace("/en-US", "").Replace("/ar-AE", "").Replace("/fr-FR", "")
-                                 .Replace("/En","").Replace("/Ar", "").Replace("/Fr", "");
-           
+                                 .Replace("/ar", "").Replace("/fr", "");
+            if (culture.ToLower().Contains("en"))
+            {
+                return Redirect(returnUrl);
+            }
 
-            string languageCode = culture.Substring(0, 2);
-            languageCode = languageCode.Substring(0, 1).ToUpper() + languageCode.Substring(1);
-            return Redirect($"/{languageCode}{returnUrl}");
+            return Redirect($"/{culture.Substring(0, 2)}{returnUrl}");
         }
         #endregion
 
@@ -98,7 +98,6 @@ namespace MKT.Website.Controllers
         public IActionResult Main(string lang)
         {
             var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar-AE");
 
             return PartialView();
         }

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /secret-page/
+Disallow: /private-folder/
+Allow: /public-folder/

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Tech Nexus Technology Solutions - Your Tech partner in Abu Dhabi">
+    <meta name="author" content="Tech Nexus">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WMFRB3D');</script>
+    <!-- End Google Tag Manager -->
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="~/css/betler/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="~/css/betler/vendors.css" rel="stylesheet">
+    <link href="~/css/betler/style.css" rel="stylesheet">
+
+    <!-- EXTRA CSS RTL STYLES ONLY -->
+    <link href="~/css/betler/extra_rtl_styles.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="~/css/betler/custom.css" rel="stylesheet">
+
+    <script src="~/lib/jquery/jquery.slim.min.js"></script>
+    <script src="~/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/map.js"></script>
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_zOsSF89_TDKfYKTkbEkoKGVEu9fmGH4&libraries=places&callback=initMap">
+    </script>
+</head>
+<body dir="rtl">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMFRB3D" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="preloader">
+        <div data-loader="circle-side"></div>
+    </div><!-- /Preload -->
+
+    <div>
+        <div class="background-image" data-background="url(../img/betler/main_bg_2.jpg)">
+            <div class="min-vh-100 d-flex flex-column opacity-mask" data-opacity-mask="rgba(0, 84, 166, 0.6)">
+
+                @RenderBody()
+
+
+
+                <div id="map" style="width:100%;height:400px"></div>
+
+                <div class="container py-2 copy white">
+                    <a asp-action="ContactUs" asp-controller="Home" class="container py-2 copy white">تك نكزس للحلول التقنية - ابوظبي</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMMON SCRIPTS -->
+    <script src="~/js/betler/common_scripts.js"></script>
+    <script src="~/js/betler/common_func.js"></script>
+
+</body>
+</html>

@@ -156,6 +156,9 @@
   <data name="str-it-title" xml:space="preserve">
     <value>Conseil informatique</value>
   </data>
+  <data name="str-meta-description" xml:space="preserve">
+    <value>Transformez votre entreprise grâce à des solutions technologiques de pointe à Abu Dhabi. Offrant des applications mobiles et web, notre société technologique propose des services de transformation numérique pour les entreprises. Faites passer votre présence en ligne au niveau supérieur et atteignez vos objectifs commerciaux avec Tech Nexus.</value>
+  </data>
   <data name="str-mobile-content" xml:space="preserve">
     <value>Développer iOS &amp; Applications Android natives et hybrides</value>
   </data>
@@ -298,7 +301,7 @@
     <value>Technologies</value>
   </data>
   <data name="str_title" xml:space="preserve">
-    <value>Tech Nexus - Abu Dhabi</value>
+    <value>Nous sommes une entreprise de solutions technologiques à Abu Dhabi | Tech Nexus</value>
   </data>
   <data name="str_welcome_message" xml:space="preserve">
     <value>Welcome in French</value>

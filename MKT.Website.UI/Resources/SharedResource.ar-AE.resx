@@ -156,6 +156,9 @@
   <data name="str-it-title" xml:space="preserve">
     <value>الإستشارات التقنية</value>
   </data>
+  <data name="str-meta-description" xml:space="preserve">
+    <value>قم بتحويل شركتك مع حلول تكنولوجيا المعلومات المتقدمة في أبوظبي. نحن نقدم خدمات تطوير تطبيقات الجوال والويب، وشركتنا التكنولوجية متخصصة في خدمات التحول الرقمي للشركات. ارتقِ بوجودك عبر الإنترنت إلى مستوى جديد وحقق أهدافك التجارية مع Tech Nexus.</value>
+  </data>
   <data name="str-mobile-content" xml:space="preserve">
     <value>تطوير تطبيقات ايو اس و الاندرويد </value>
   </data>
@@ -301,7 +304,7 @@
     <value>تقنياتنا</value>
   </data>
   <data name="str_title" xml:space="preserve">
-    <value>تك نكزس للحلول التقنية - ابوظبي</value>
+    <value>نقدم حلول تقنية في ابوظبي | تك نكزس</value>
   </data>
   <data name="str_welcome_message" xml:space="preserve">
     <value>مرحباً</value>

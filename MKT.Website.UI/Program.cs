@@ -9,6 +9,8 @@ using System.Reflection;
 using MKT.Website.Services;
 using MKT.Website.UI.Middleware;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Rewrite;
+using MKT.Website.UI.Sitemap;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,6 +39,7 @@ builder.Services.Configure<RequestLocalizationOptions>(
                            new CultureInfo("ar-AE"),
                            new CultureInfo("en-US"),
                            new CultureInfo("fr-FR")
+
             };
 
         options.DefaultRequestCulture = new RequestCulture(culture: "ar-AE", uiCulture: "ar-AE");
@@ -46,6 +49,14 @@ builder.Services.Configure<RequestLocalizationOptions>(
         options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
     });
 #endregion
+
+
+// Add services for sitemap
+#region sitemap
+builder.Services.Configure<XmlSitemapOptions>(builder.Configuration.GetSection("XmlSitemap"));
+builder.Services.AddScoped<IXmlSitemapGenerator, XmlSitemapGenerator>();
+#endregion
+
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
@@ -86,10 +97,28 @@ app.UseHsts();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
+
+app.MapGet("/sitemap.xml", async (IXmlSitemapGenerator sitemapGenerator) =>
+{
+    var sitemapStream = sitemapGenerator.GenerateSitemap();
+
+    await using (var responseStream = sitemapStream)
+    {
+        var response = sitemapStream.ToArray();
+        await responseStream.WriteAsync(response);
+    }
+});
+
+
 
 app.UseRouting();
-app.UseMiddleware<RedirectMiddleware>("technexus.com", "https://www.technexus.com");
+//app.UseMiddleware<RedirectMiddleware>("technexus.com", "https://www.technexus.com");
+app.UseRewriter(new RewriteOptions()
+            .AddRedirectToNonWwwPermanent()
+            .AddRedirectToHttps()
+         );
+app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
+
 
 app.UseAuthorization();
 
@@ -97,11 +126,11 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     "lang",
-    "{lang}/{controller}/{action}/{id?}", new { controller = "Home", action = "Main", lang = "ar-AE" });
+    "{lang}/{controller}/{action}/{id?}", new { controller = "Home", action = "Main", lang = "en-US" });
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller}/{action}/{id?}");
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller}/{action}/{id?}");
 
 
 
