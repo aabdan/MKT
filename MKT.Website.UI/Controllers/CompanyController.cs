@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MKT.Website.Data;
 using MKT.Website.Models;
 using System.ComponentModel;
 
 namespace MKT.Website.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CompanyController : Controller
     {
         private readonly ApplicationDbContext _db;

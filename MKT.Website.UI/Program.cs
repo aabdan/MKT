@@ -11,6 +11,11 @@ using MKT.Website.UI.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Rewrite;
 using MKT.Website.UI.Sitemap;
+using Microsoft.AspNetCore.Identity;
+using MKT.Website.UI.Models;
+using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Hosting;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -59,9 +64,19 @@ builder.Services.AddScoped<IXmlSitemapGenerator, XmlSitemapGenerator>();
 
 
 
+#region Identity
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
 builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
 
+builder.Services.AddControllers().AddJsonOptions(x =>
+   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+builder.Services.AddScoped<UserManager<ApplicationUser>>();
+
+#endregion
 // Storage
 builder.Services.AddSingleton<IAzureBlobStorageConfiguration>(new AzureBlobStorageConfiguration
 {
@@ -128,9 +143,9 @@ app.MapControllerRoute(
     "lang",
     "{lang}/{controller}/{action}/{id?}", new { controller = "Home", action = "Main", lang = "en-US" });
 
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller}/{action}/{id?}");
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller}/{action}/{id?}");
 
 
 
