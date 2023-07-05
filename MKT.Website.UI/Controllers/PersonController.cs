@@ -4,10 +4,13 @@ using MKT.Website.Data;
 using MKT.Website.Models;
 using MKT.Infrastructure;
 using MKT.Infrastructure.AzureBlobStorage;
-
+using System.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MKT.Website.Controllers
 {
+    [Authorize(Roles = "Admin")]
+
     public class PersonController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -24,6 +27,7 @@ namespace MKT.Website.Controllers
         }
 
         //Get
+        [AllowAnonymous]
         public IActionResult Create()
         {
 
@@ -31,6 +35,7 @@ namespace MKT.Website.Controllers
         }
 
         //POST
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Person obj)
