@@ -1,22 +1,27 @@
-using Microsoft.EntityFrameworkCore;
 using MKT.Website.Data;
-using MKT.Infrastructure.AzureBlobStorage;
-using System.Globalization;
-using Microsoft.AspNetCore.Localization;
-using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Mvc.Razor;
-using System.Reflection;
 using MKT.Website.Services;
 using MKT.Website.UI.Middleware;
+using MKT.Website.UI.Sitemap;
+using MKT.Website.UI.Models;
+using MKT.Infrastructure.AzureBlobStorage;
+
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Rewrite;
-using MKT.Website.UI.Sitemap;
 using Microsoft.AspNetCore.Identity;
-using MKT.Website.UI.Models;
-using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Hosting;
-using System.Configuration;
+using Microsoft.AspNetCore.Mvc.Razor;
+
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
+
+using System.Text.Json.Serialization;
+using System.Configuration;
+using System.Reflection;
+using System.Globalization;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -78,6 +83,8 @@ builder.Services.AddControllers().AddJsonOptions(x =>
 builder.Services.AddScoped<UserManager<ApplicationUser>>();
 
 #endregion
+
+
 // Storage
 builder.Services.AddSingleton<IAzureBlobStorageConfiguration>(new AzureBlobStorageConfiguration
 {
@@ -86,9 +93,11 @@ builder.Services.AddSingleton<IAzureBlobStorageConfiguration>(new AzureBlobStora
 
 
 
-
-
 var app = builder.Build();
+
+
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

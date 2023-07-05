@@ -31,7 +31,7 @@ namespace MKT.Website.Controllers
         {
             Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
                 CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
-                new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
+                new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1)});
 
             returnUrl = returnUrl.Replace("/en-US", "").Replace("/ar-AE", "").Replace("/fr-FR", "")
                                  .Replace("/ar", "").Replace("/fr", "");

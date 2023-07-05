@@ -11,7 +11,20 @@
     <link href="~/css/particles/style.css" rel="stylesheet" media="screen" />
     <link href="~/css/site.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WMFRB3D');</script>
+    <!-- End Google Tag Manager -->
+  
     <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -27,16 +40,12 @@
 
     <script src="https://kit.fontawesome.com/30139f6fae.js" crossorigin="anonymous"></script>
 
-    <!-- BASE CSS -->
     <link href="~/css/betler/bootstrap-rtl.min.css" rel="stylesheet">
-    <link href="~/css/betler/vendors.css" rel="stylesheet">
-    <link href="~/css/betler/style.css" rel="stylesheet">
-
-    <!-- EXTRA CSS RTL STYLES ONLY -->
-    <link href="~/css/betler/extra_rtl_styles.css" rel="stylesheet">
-
-    <!-- YOUR CUSTOM CSS -->
     <link href="~/css/betler/custom.css" rel="stylesheet">
+    <link href="~/css/betler/extra_rtl_styles.css" rel="stylesheet">
+    <link href="~/css/betler/style.css" rel="stylesheet">
+    <link href="~/css/betler/vendors.css" rel="stylesheet">
+
 
     <script src="~/lib/jquery/jquery.slim.min.js"></script>
     <script src="~/jquery-validate/jquery.validate.min.js"></script>
@@ -64,28 +73,46 @@
                 <a class="navbar-brand" asp-controller="Home" asp-action="Main" title="technexus-logo">
                     <img src=@_localization.Getkey("str_logo") alt="Tech Nexus Logo" style="max-height:10vh;width:300px" />
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" id="toggleButton" type="button" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor02">
 
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav mx-auto mobile-links">
                         <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="About" title="about-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_about") </a></li>
                         <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="Services" title="services-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_service")</a></li>
                         <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="Technologies" title="technologies-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_technologies")</a></li>
                         <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="Clients" title="clients-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_client")</a></li>
                         <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="ContactUs" title="contactus-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_contact")</a></li>
 
+                        <li class="nav-item pe-1">
+                            @if (User.Identity.IsAuthenticated == false)
+                            {
+                            <li class="nav-item pe-1">
+
+                                <a class="nav-link fs-4" onclick="showLogin()" style="text-decoration:none; color:#0054A6; cursor:pointer;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </li>
+                            }
+                            else
+                            {
+                            <li class="nav-item pe-1">
+
+                                <a class="nav-link fs-4" asp-controller="Company" asp-action="Index" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">
+                                    <i class="fa-solid fa-share-from-square"></i>
+                                </a>
+                            </li>
+                            }
                     </ul>
 
-                    <div class="dropdown" dir=@_localization.Getkey("lang_dir")>
+                    <div class="dropdown nav-item p-0 mx-0 mobile-links" dir=@_localization.Getkey("lang_dir")>
 
                         <a title="language-selection" class="nav-link dropdown-toggle" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             @Thread.CurrentThread.CurrentUICulture.Parent.NativeName <i class="fas fa-globe"></i>
                         </a>
-                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu text-center mobile-links" aria-labelledby="navbarDropdown">
                             <li><a title="Change-Language-ar-AE" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="ar-AE" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-united-arab-emirates flag"></i> العربية</a></li>
                             <li><a title="Change-Language-en-US" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-united-states flag"></i> English</a></li>
                             <li><a title="Change-Language-fr-FR" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="fr-FR" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path" class="nav-item pt-2" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'"><i class="flag-icon flag-france flag"></i> français</a></li>
@@ -94,13 +121,17 @@
                     </div>
 
                 </div>
-              
+
             </div>
         </nav>
     </header>
 
+    <!-- Login window -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
 
-    
+    <a href="https://wa.me/971507746099?text=مرحباً %20" title="whatsapp" class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
     
     <div>
         @RenderBody()
@@ -145,14 +176,39 @@
         </div>
         <!-- Copyright -->
     </footer>
-    
+
 
     <script src="~/js/betler/common_scripts.js"></script>
     <script src="~/js/betler/common_func.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="~/js/particles/lib/particles.min.js"></script>
     <script src="~/js/particles/app.js"></script>
+
+
+
+
+    <script>
+        function showLogin() {
+            event.preventDefault();
+            $.ajax({
+                url: "@Url.Action("Login","Account")",
+                type: 'GET',
+                success: function (result) {
+                    $('#myModal').html(result);
+                    $('#myModal').modal('show');
+                }
+            });
+        }
+        $(document).ready(function () {
+            $("#toggleButton").click(function () {
+                $("#navbarColor02").toggle();
+                $(this).toggleClass("active");
+            });
+        });
+
+    </script>
+
+
 
 </body>
 </html>

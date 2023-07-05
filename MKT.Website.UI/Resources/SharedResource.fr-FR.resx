@@ -244,9 +244,6 @@
     <value>Nous développons des logiciels sur mesure qui permettent aux entreprises de répondre à leurs besoins et contraintes.</value>
   </data>
   <data name="str_contact_email" xml:space="preserve">
-    <value>Votre adresse e-mail</value>
-  </data>
-  <data name="str_contact_formemail" xml:space="preserve">
     <value>Votre e-mail</value>
   </data>
   <data name="str_contact_join" xml:space="preserve">
@@ -266,9 +263,6 @@
   </data>
   <data name="str_contact_phone" xml:space="preserve">
     <value>le téléphone:</value>
-  </data>
-  <data name="str_contact_phoneNo" xml:space="preserve">
-    <value>Nos téléphone</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
     <value>Merci d'avoir téléchargé le Guide technique de création de produit</value>

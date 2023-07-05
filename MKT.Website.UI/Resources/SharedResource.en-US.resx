@@ -247,11 +247,9 @@
     <value>We build custom software that allows businesses to meet their needs and constraints.</value>
   </data>
   <data name="str_contact_email" xml:space="preserve">
-    <value>Your Email Address</value>
+    <value>Email</value>
   </data>
-  <data name="str_contact_formemail" xml:space="preserve">
-    <value>Your Email</value>
-  </data>
+
   <data name="str_contact_join" xml:space="preserve">
     <value>subscribe to emails</value>
   </data>
@@ -259,19 +257,16 @@
     <value>Mobile:</value>
   </data>
   <data name="str_contact_msg" xml:space="preserve">
-    <value>Your Message</value>
+    <value>Message</value>
   </data>
   <data name="str_contact_name" xml:space="preserve">
-    <value>Your Name</value>
+    <value>Name</value>
   </data>
   <data name="str_contact_ourmail" xml:space="preserve">
     <value>E-mail:</value>
   </data>
   <data name="str_contact_phone" xml:space="preserve">
     <value>Phone:</value>
-  </data>
-  <data name="str_contact_phoneNo" xml:space="preserve">
-    <value>Your Phone</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
     <value>Thank you for downloading the Technical Product Build Guide</value>

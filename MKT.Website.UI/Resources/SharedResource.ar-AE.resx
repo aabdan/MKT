@@ -244,10 +244,7 @@
     <value>لديك فكرة وتريد بناء منتج تقني لها اولديك إستفسار و تحتاج الى استشارة تقنية إذاً انت في المكان الصحيح، لا تتردد بالتواصل معنا</value>
   </data>
   <data name="str_contact_email" xml:space="preserve">
-    <value>عنوان بريدك  الإلكتروني</value>
-  </data>
-  <data name="str_contact_formemail" xml:space="preserve">
-    <value>بريدك الالكتروني</value>
+    <value>عنوان بريدك الإلكتروني</value>
   </data>
   <data name="str_contact_join" xml:space="preserve">
     <value>الإشتراك برسائل البريد الإلكتروني</value>
@@ -266,9 +263,6 @@
   </data>
   <data name="str_contact_phone" xml:space="preserve">
     <value>الهاتف:</value>
-  </data>
-  <data name="str_contact_phoneNo" xml:space="preserve">
-    <value>هاتفك</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
     <value>شكراً لتحميلك دليل بناء منتج تقني</value>
