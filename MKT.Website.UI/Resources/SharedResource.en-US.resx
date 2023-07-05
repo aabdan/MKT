@@ -243,6 +243,9 @@
   <data name="str_contact_content" xml:space="preserve">
     <value>Do you want to build a technical product and need a consultation or inquiry? Then you are in the right place. Do not hesitate to contact us in one of the following ways</value>
   </data>
+  <data name="str_contact_content_main" xml:space="preserve">
+    <value>We build custom software that allows businesses to meet their needs and constraints.</value>
+  </data>
   <data name="str_contact_email" xml:space="preserve">
     <value>Your Email Address</value>
   </data>
@@ -305,6 +308,9 @@
   </data>
   <data name="str_title" xml:space="preserve">
     <value>We are a tech solutions company in Abu Dhabi | Tech Nexus</value>
+  </data>
+  <data name="str_title_footer" xml:space="preserve">
+    <value>TECH NEXUS TECHNOLOGY SOLUTIONS - SOLE PROPRIETORSHIP L.L.C.</value>
   </data>
   <data name="str_welcome_message" xml:space="preserve">
     <value>Welcome in English</value>

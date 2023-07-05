@@ -11,6 +11,7 @@ using MKT.Website.UI.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Rewrite;
 using MKT.Website.UI.Sitemap;
+using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -95,7 +96,15 @@ app.UseHsts();
 
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    //Google Page Speed- Serve static assets with an efficient cache policy
+    OnPrepareResponse = _ =>
+    {
+        _.Context.Response.Headers.Append("Cache-Control", string.Format("public,max-age={0}", TimeSpan.FromHours(12).TotalSeconds));
+
+    }
+});
 
 
 app.MapGet("/sitemap.xml", async (IXmlSitemapGenerator sitemapGenerator) =>

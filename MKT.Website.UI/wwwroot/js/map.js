@@ -3,7 +3,7 @@ let map = "";
 async function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 11,
-        center: { lat: 24.340426217012137, lng: 54.5343818870348 },
+        center: { lat: 24.390426217012137, lng: 54.5343818870348 },
         streetViewControl: false,
     });
 
@@ -74,7 +74,7 @@ async function initMap() {
     });
 
     marker.addListener("click", () => {
-        window.open("https://maps.app.goo.gl/qqqDyuRJM9Nd22vBA?g_st=iwb");
+        window.open("https://goo.gl/maps/eUuQw3tAtvzoCjjr9");
     })
 }
 

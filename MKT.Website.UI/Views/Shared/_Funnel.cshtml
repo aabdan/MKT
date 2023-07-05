@@ -35,10 +35,7 @@
     <script src="~/lib/jquery/jquery.slim.min.js"></script>
     <script src="~/jquery-validate/jquery.validate.min.js"></script>
     <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-    <script src="~/js/map.js"></script>
-    <script async
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_zOsSF89_TDKfYKTkbEkoKGVEu9fmGH4&libraries=places&callback=initMap">
-    </script>
+ 
 </head>
 <body dir="rtl">
 
@@ -58,21 +55,60 @@
 
                 @RenderBody()
 
-
-
-                <div id="map" style="width:100%;height:400px"></div>
-
-                <div class="container py-2 copy white">
-                    <a asp-action="ContactUs" asp-controller="Home" class="container py-2 copy white">تك نكزس للحلول التقنية - ابوظبي</a>
-
-                </div>
             </div>
         </div>
     </div>
 
+
+    <footer class=" text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" dir=@_localization.Getkey("lang_dir")>
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>@_localization.Getkey("str_Get_connected")</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <a href="https://www.facebook.com/TechNexus.ae" title="facebook-TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#30A2FF'" onmouseout="this.style.color='#6c757d'">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com/TechNexusae" title="twitter-TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#00ACEE'" onmouseout="this.style.color='#6c757d'">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com/search?authuser=0&hl=en&gl=ae&output=search&q=Tech+Nexus+Technology+Solutions+-+%D8%AA%D9%8A%D9%83+%D9%86%D9%83%D8%B2%D8%B3+%D9%84%D9%84%D8%AD%D9%84%D9%88%D9%84+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9&ludocid=7684089176108624910&gsas=1&lsig=AB86z5VXZo19CRcSqtkQ3z_JItSl&ved=1i%3A3%2Ct%3A109124%2Ce%3A2%2Cp%3AinByZIqgHYmQkdUP_uSd6A4%3A53#" title="google-map-TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#0F9D58'" onmouseout="this.style.color='#6c757d'">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com/TechNexus.ae" title="instagram-TechNexus.ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#FF0060'" onmouseout="this.style.color='#6c757d'">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/tech-nexus-ae" title="linkedin-tech-nexus-ae" target="_blank" class="me-3 fs-3" style="color:#6c757d" onmouseover="this.style.color='#30A2FF'" onmouseout="this.style.color='#6c757d'">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023
+            <a class=" fw-bold" style="color: rgb(0, 84, 166);" title="technexus-site-url" href="https://technexus.ae/">@_localization.Getkey("str_title_footer")</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
     <!-- COMMON SCRIPTS -->
     <script src="~/js/betler/common_scripts.js"></script>
     <script src="~/js/betler/common_func.js"></script>
+
+    <!-- Google Maps -->
+
+    <script src="~/js/map.js"></script>
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_zOsSF89_TDKfYKTkbEkoKGVEu9fmGH4&libraries=places&callback=initMap">
+    </script>
+
 
 </body>
 </html>

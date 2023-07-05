@@ -1,8 +1,11 @@
 ﻿
 @{
-    Layout = "~/Views/Shared/_Main.cshtml";
+    Layout = "~/Views/Shared/_Master.cshtml";
     ViewData["Title"] = _localization.Getkey("str_title");
 }
+<Partial name="_MainPartial" />
+
+<Partial name="_MainSliderDataPartial" />
 
 <div dir=@_localization.Getkey("lang_dir")>
 <Partial name="_AboutPartial"/>

@@ -82,6 +82,43 @@ namespace MKT.Website.Controllers
         }
         #endregion
 
+        [Route("About")]
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        [Route("Services")]
+
+        public IActionResult Services()
+        {
+            return View();
+        }
+
+        [Route("Technologies")]
+
+        public IActionResult Technologies()
+        {
+            return View();
+        }
+
+
+        [Route("Clients")]
+
+        public IActionResult Clients()
+        {
+            return View();
+        }
+
+        [Route("ContactUs")]
+
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+
+
         [Route("Privacy")]
 
         public IActionResult Privacy()
