@@ -14,8 +14,9 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
     font-family: "Noto Kufi Arabic", Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
@@ -25,20 +26,12 @@ nav {
     background-color: white;
 }
 
-nav a {
+    nav a {
         display: block;
         background-color: white;
-}
+    }
 
 
-
-
-
-
-body {
-    align-items: center;
-    justify-content: center;
-}
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -120,26 +113,22 @@ body {
 .card {
     position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
-.card:hover {
-        cursor:pointer;
+    .card:hover {
+        cursor: pointer;
         transform: scale(1.1);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         z-index: 2;
-}
-
-    .card:hover .card-img svg {
-        fill: #69b3e3 !important;
-        width: 80px !important;
-        height: 80px !important;
     }
 
-    .card:hover .card-body h4 {
-        color: #69b3e3 !important;
-    }
+        .card:hover .card-img svg {
+            fill: #69b3e3 !important;
+            width: 80px !important;
+            height: 80px !important;
+        }
 
-
-
-
+        .card:hover .card-body h4 {
+            color: #69b3e3 !important;
+        }

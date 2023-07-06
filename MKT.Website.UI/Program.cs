@@ -159,11 +159,11 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     "lang",
-    "{lang}/{controller}/{action}/{id?}", new { controller = "Home", action = "Main", lang = "en-US" });
+    "{lang}/{controller}/{action}/{id?}", new { controller = "Home", action = "Main", lang = "en" });
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller}/{action}/{id?}");
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller}/{action}/{id?}");
 
 
 

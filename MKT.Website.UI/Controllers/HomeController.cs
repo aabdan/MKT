@@ -34,13 +34,15 @@ namespace MKT.Website.Controllers
                 new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
 
             returnUrl = returnUrl.Replace("/en-US", "").Replace("/ar-AE", "").Replace("/fr-FR", "")
-                                 .Replace("/ar", "").Replace("/fr", "");
-            if (culture.ToLower().Contains("en"))
-            {
-                return Redirect(returnUrl);
-            }
+                                 .Replace("/En", "").Replace("/Ar", "").Replace("/Fr", "")
+                                  .Replace("/en", "").Replace("/ar", "").Replace("/fr", "");
 
-            return Redirect($"/{culture.Substring(0, 2)}{returnUrl}");
+
+            string languageCode = culture.Substring(0, 2);
+            languageCode = languageCode.Substring(0, 1).ToLower() + languageCode.Substring(1);
+            return Redirect($"/{languageCode}{returnUrl}");
+
+
         }
         #endregion
 
@@ -89,7 +91,7 @@ namespace MKT.Website.Controllers
             return View();
         }
 
- 
+
 
         public IActionResult Services()
         {
@@ -104,14 +106,14 @@ namespace MKT.Website.Controllers
         }
 
 
-     
+
 
         public IActionResult Clients()
         {
             return View();
         }
 
-      
+
 
         public IActionResult ContactUs()
         {

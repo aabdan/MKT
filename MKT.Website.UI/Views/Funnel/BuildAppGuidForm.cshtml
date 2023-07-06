@@ -1,16 +1,21 @@
 ﻿@model Person
 @{
-    Layout = "~/Views/Shared/_Funnel.cshtml";
+    Layout = "~/Views/Shared/_Master.cshtml";
 }
 
+<br />
+
+
+    <div class="background-image" data-background="url(/img/betler/main_bg_3.jpg)">
+        <div class="min-vh-100 d-flex flex-column opacity-mask" data-opacity-mask="rgba(0, 84, 166, 0.6)">
 
     <div class="container my-auto">
         <div class="row">
             <div class="col-md-9 col-lg-7 col-xl-5 mx-auto my-4">
-                <div class="panel header_2 center">
+                <div class="panel header_2 center" style="background-color:rgb(152 193 232 / 60%)">
                     <figure class="add_bottom_30">
                         <a href="https://TechNexus.ae">
-                            <img src="~/img/TechNexus/TechNexus-MKT-App.svg" width="100%" height="100%" alt="">
+                            <img src="/img/TechNexus/TechNexus-MKT-App.svg" width="100%" height="100%" alt="">
                         </a>
                     </figure>
                     <h4>
@@ -24,43 +29,40 @@
                     </h4>
                     <br />
 
-                    <form asp-action="Create" asp-controller="Funnel" id="main-form" class="input_style_2">
+                    <form id="contact-form" method="post" class="p-5 pt-4 px-3 rounded-2">
 
-
-                        @*<div asp-validation-summary="All" class="input-validation-error" class="text-danger"></div>*@
-                        <div class="mb-3">
-                            <label asp-for="PersonName"></label>
-                            <input asp-for="PersonName" type="text" required class="form-control" />
-                            <span asp-validation-for="PersonName" class="text-danger"></span>
+                        <div class="mb-3 ">
+                            <input asp-for="PersonName" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_name")" dir=@_localization.Getkey("lang_dir") />
+                            <span asp-validation-for="PersonName" class="text-danger d-block mt-1"></span>
                         </div>
                         <div class="mb-3">
-                            <label asp-for="PersonPhone"></label>
-                            <input asp-for="PersonPhone" type="tel" required class="form-control" />
-                            <span asp-validation-for="PersonPhone" class="text-danger"></span>
+                            <input asp-for="PersonPhone" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_phone")" dir=@_localization.Getkey("lang_dir") />
+                            <span asp-validation-for="PersonPhone" class="text-danger d-block mt-1"></span>
 
                         </div>
                         <div class="mb-3">
-                            <label asp-for="PersonEmail"></label>
-                            <input asp-for="PersonEmail" type="email" required class="form-control" />
-                            <span asp-validation-for="PersonEmail" class="text-danger"></span>
+                            <input asp-for="PersonEmail" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_email")" dir=@_localization.Getkey("lang_dir") />
+                            <span asp-validation-for="PersonEmail" class="text-danger d-block mt-1 "></span>
 
                         </div>
-                        <br />
-                        <div class="form-group terms mb-4">
-                        </div>
 
-                        <div class="form-group terms mb-4">
-                            <label class="container_check">
-                                أوافق على <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">الإشتراك برسائل البريد الإلكتروني</a>.
+                        <div class="form-group terms mb-3" dir=@_localization.Getkey("lang_dir")>
+
+                            <label class="container_check fs-5" dir=@_localization.Getkey("lang_dir")>
                                 <input type="checkbox" asp-for="PersonSubscription" checked name="PersonSubscription" id="agree">
+
+                                @_localization.Getkey("str_contact_accept") <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">@_localization.Getkey("str_contact_join")</a>.
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-
-                        <button id="submit-button" type="submit" class="btn_1 full-width">حمله الآن!</button>
-
-
+                        <div class="form-group pb-5">
+                            <button id="my-form-button" type="submit" class="btn btn-primary btn-block btn-lg pt-3 pb-3 float-right" title="Send Now" style="background-color:rgb(0, 84, 166)" dir=@_localization.Getkey("lang_dir")>
+                                @_localization.Getkey("str_contact_btn")
+                            </button>
+                        </div>
                     </form>
+
+
 
                 </div>
             </div>
@@ -68,6 +70,9 @@
         </div>
         <!-- /row -->
     </div>
+    </div>
+    </div>
+
     <!-- /container -->
     <!-- /background-image -->
     <!-- Modal terms -->
@@ -90,8 +95,6 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
-
-    
 
 
 

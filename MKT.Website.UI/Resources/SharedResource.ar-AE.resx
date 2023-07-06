@@ -256,13 +256,13 @@
     <value>رسالتك</value>
   </data>
   <data name="str_contact_name" xml:space="preserve">
-    <value>اسمك</value>
+    <value>الإسم</value>
   </data>
   <data name="str_contact_ourmail" xml:space="preserve">
-    <value>البريد الإلكتروني:</value>
+    <value>البريد الإلكتروني</value>
   </data>
   <data name="str_contact_phone" xml:space="preserve">
-    <value>الهاتف:</value>
+    <value>الهاتف</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
     <value>شكراً لتحميلك دليل بناء منتج تقني</value>
@@ -293,6 +293,9 @@
   </data>
   <data name="str_service" xml:space="preserve">
     <value>خدماتنا</value>
+  </data>
+  <data name="str_start_your_project" xml:space="preserve">
+    <value>إبدأ مشروعك</value>
   </data>
   <data name="str_technologies" xml:space="preserve">
     <value>تقنياتنا</value>

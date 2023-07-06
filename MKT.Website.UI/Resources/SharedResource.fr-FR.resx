@@ -294,6 +294,9 @@
   <data name="str_service" xml:space="preserve">
     <value>Services</value>
   </data>
+  <data name="str_start_your_project" xml:space="preserve">
+    <value>Commencez votre projet</value>
+  </data>
   <data name="str_technologies" xml:space="preserve">
     <value>Technologies</value>
   </data>
