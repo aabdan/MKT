@@ -57,21 +57,21 @@
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMFRB3D" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
+    <div>
+        <a href="https://wa.me/971507746099?text=مرحباً %20" title="whatsapp" class="float" target="_blank">
+            <i class="fa-brands fa-whatsapp my-float"></i>
+        </a>
 
 
-        <div>
-            <a href="https://wa.me/971507746099?text=مرحباً %20" title="whatsapp" class="float" target="_blank">
-                <i class="fa-brands fa-whatsapp my-float"></i>
-            </a>
+    </div>
 
-
-        </div>
+        
 
 
     <header>
         <nav class="navbar navbar-expand-lg fixed-top" dir=@_localization.Getkey("lang_dir") style=" font-size: 2vw;">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-controller="Home" asp-action="Main" title="technexus-logo">
+                <a class="navbar-brand" href="#" title="technexus-logo">
                     <img src=@_localization.Getkey("str_logo") alt="Tech Nexus Logo" style="max-height:10vh;width:300px" />
                 </a>
                 <button class="navbar-toggler" id="toggleButton" type="button" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,18 +81,17 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
 
                     <ul class="navbar-nav mx-auto mobile-links">
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="About" title="about-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_about") </a></li>
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="Services" title="services-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_service")</a></li>
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="Technologies" title="technologies-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_technologies")</a></li>
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="Clients" title="clients-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_client")</a></li>
-                        <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="ContactUs" title="contactus-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_contact")</a></li>
-
+                        <li class="nav-item pe-1"><a class="nav-link fs-4"  href="#about" title="about-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_about") </a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4"  href="#services" title="services-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_service")</a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4"  href="#technologies" title="technologies-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_technologies")</a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4"  href="#clients" title="clients-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_client")</a></li>
+                        <li class="nav-item pe-1"><a class="nav-link fs-4"  href="#contactus" title="contactus-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_contact")</a></li>
                         <li class="nav-item pe-1">
                             @if (User.Identity.IsAuthenticated == false)
                             {
                             <li class="nav-item pe-1">
 
-                                <a class="nav-link fs-4" onclick="showLogin()" style="text-decoration:none; color:#0054A6; cursor:pointer;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">
+                                <a class="nav-link fs-4" onclick="showLogin()"  style="text-decoration:none; color:#0054A6; cursor:pointer;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">
                                     <i class="fa-solid fa-user"></i>
                                 </a>
                             </li>
@@ -101,7 +100,7 @@
                             {
                             <li class="nav-item pe-1">
 
-                                <a class="nav-link fs-4" asp-controller="Company" asp-action="Index" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">
+                                <a class="nav-link fs-4" asp-controller="Company" asp-action="Index" onclick="setActiveLink(this)" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">
                                     <i class="fa-solid fa-share-from-square"></i>
                                 </a>
                             </li>
@@ -204,6 +203,12 @@
             $("#toggleButton").click(function () {
                 $("#navbarColor02").toggle();
                 $(this).toggleClass("active");
+            });
+        });
+        $(document).ready(function () {
+            $('.nav-link').click(function () {
+                $('.nav-link').removeClass('active-link'); 
+                $(this).addClass('active-link'); 
             });
         });
 

@@ -82,3 +82,8 @@ canvas {
         font-size: 18px;
     }
 }
+
+
+.active-link {
+    color: #69b3e3 !important;
+}

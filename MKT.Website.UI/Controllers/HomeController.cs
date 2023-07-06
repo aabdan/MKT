@@ -136,7 +136,7 @@ namespace MKT.Website.Controllers
         {
             var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
 
-            return PartialView();
+            return View();
         }
     }
 }
