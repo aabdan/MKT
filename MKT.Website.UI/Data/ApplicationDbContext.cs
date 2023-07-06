@@ -42,3 +42,5 @@ namespace MKT.Website.Data
         }
     }
 }
+//UserName = "SuperAdmin"
+//password = "Admin1234#";
