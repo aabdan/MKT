@@ -31,7 +31,7 @@ namespace MKT.Website.Controllers
         {
             Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
                 CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
-                new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1)});
+                new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
 
             returnUrl = returnUrl.Replace("/en-US", "").Replace("/ar-AE", "").Replace("/fr-FR", "")
                                  .Replace("/ar", "").Replace("/fr", "");
@@ -82,21 +82,21 @@ namespace MKT.Website.Controllers
         }
         #endregion
 
-        [Route("About")]
+
 
         public IActionResult About()
         {
             return View();
         }
 
-        [Route("Services")]
+ 
 
         public IActionResult Services()
         {
             return View();
         }
 
-        [Route("Technologies")]
+
 
         public IActionResult Technologies()
         {
@@ -104,14 +104,14 @@ namespace MKT.Website.Controllers
         }
 
 
-        [Route("Clients")]
+     
 
         public IActionResult Clients()
         {
             return View();
         }
 
-        [Route("ContactUs")]
+      
 
         public IActionResult ContactUs()
         {
