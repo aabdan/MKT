@@ -18,28 +18,25 @@
 <body>
 
 
-        <div id="particles-js" >
+    <div id="particles-js" >
 
+        
+            <div id="MainSentances" class="main-sentances" style="text-align:center; font-size: 2.5vw;" dir=@_localization.Getkey("lang_dir")>
+                @_localization.Getkey("str_main_message_1")
 
-    <div id="MainSentances" class="main-sentances" style="text-align:center; font-size: 2.5vw;" dir=@_localization.Getkey("lang_dir")>
-        @_localization.Getkey("str_main_message_1")
+                <br />
+                <span class="auto-type"> </span>
+                <br />
+            </div>
 
-        <br />
-        <span class="auto-type"> </span>
-        <br />
-    </div>
+        </div>
+        
 
-    </div>
-
-    
     
     <div>
         @RenderBody()
     </div>
 
-
-    <script src="~/js/particles/lib/particles.min.js"></script>
-    <script src="~/js/particles/app.js"></script>
 
 
 
