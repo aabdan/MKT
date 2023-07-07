@@ -1,6 +1,5 @@
 using MKT.Website.Data;
 using MKT.Website.Services;
-using MKT.Website.UI.Middleware;
 using MKT.Website.UI.Sitemap;
 using MKT.Website.UI.Models;
 using MKT.Infrastructure.AzureBlobStorage;
@@ -25,23 +24,14 @@ using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.Services.AddMvc();
 // Add services to the container.
 #region Localization
 //Step 1
 builder.Services.AddSingleton<LanguageService>();
+// Add localization services
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-builder.Services.AddMvc()
-    .AddViewLocalization()
-    .AddDataAnnotationsLocalization(options =>
-    {
-        options.DataAnnotationLocalizerProvider = (type, factory) =>
-        {
-            var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
-            return factory.Create("SharedResource", assemblyName.Name);
-        };
-    });
-
+// Configure supported cultures
 builder.Services.Configure<RequestLocalizationOptions>(
     options =>
     {
@@ -54,11 +44,15 @@ builder.Services.Configure<RequestLocalizationOptions>(
             };
 
         options.DefaultRequestCulture = new RequestCulture(culture: "ar-AE", uiCulture: "ar-AE");
+        //options.SetDefaultCulture("ar-AE");
         options.SupportedCultures = supportedCultures;
         options.SupportedUICultures = supportedCultures;
 
-        options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+        //options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+
+
     });
+
 #endregion
 
 
@@ -115,6 +109,7 @@ else
     app.UseDeveloperExceptionPage(developerExceptionPageoptions);
 }
 
+// Enable localization middleware
 app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
 

@@ -22,5 +22,9 @@
     <ProjectReference Include="..\MKT.Infrastructure\MKT.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
 
 </Project>

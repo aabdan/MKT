@@ -22,6 +22,7 @@ namespace MKT.Website.Controllers
         {
             _logger = logger;
             _localization = localization;
+
         }
 
 

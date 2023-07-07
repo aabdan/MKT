@@ -217,7 +217,8 @@
     <value>Develop anything.</value>
   </data>
   <data name="str_about_title_4" xml:space="preserve">
-    <value>Build a beautiful, modern website with flexible Bootstrap components built from scratch.</value>
+    <value>Tech Nexus is a mobile and web Development organization based in Abu Dhabi. Tech Nexus is committed to a high degree of quality and professionalism.
+We strive to lead in the development of high-quality TECH solutions based on the most advanced technologies and using software engineering’s best practice.</value>
   </data>
   <data name="str_btn_about1" xml:space="preserve">
     <value>View all pages</value>
@@ -246,11 +247,8 @@
   <data name="str_contact_btn" xml:space="preserve">
     <value>Send Now</value>
   </data>
-  <data name="str_contact_content" xml:space="preserve">
-    <value>Do you want to build a technical product and need a consultation or inquiry? Then you are in the right place. Do not hesitate to contact us in one of the following ways</value>
-  </data>
   <data name="str_contact_content_main" xml:space="preserve">
-    <value>We build custom software that allows businesses to meet their needs and constraints.</value>
+    <value>We specialize in crafting tailor-made software solutions that empower businesses to seamlessly fulfill their unique requirements and overcome any limitations.</value>
   </data>
   <data name="str_contact_email" xml:space="preserve">
     <value>Email</value>
@@ -268,10 +266,10 @@
     <value>Name</value>
   </data>
   <data name="str_contact_ourmail" xml:space="preserve">
-    <value>E-mail:</value>
+    <value>E-mail</value>
   </data>
   <data name="str_contact_phone" xml:space="preserve">
-    <value>Phone:</value>
+    <value>Phone</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
     <value>Thank you for downloading the Technical Product Build Guide</value>
@@ -314,8 +312,5 @@
   </data>
   <data name="str_title_footer" xml:space="preserve">
     <value>TECH NEXUS TECHNOLOGY SOLUTIONS - SOLE PROPRIETORSHIP L.L.C.</value>
-  </data>
-  <data name="str_welcome_message" xml:space="preserve">
-    <value>Welcome in English</value>
   </data>
 </root>

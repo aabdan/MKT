@@ -243,20 +243,17 @@
   <data name="str_contact_btn" xml:space="preserve">
     <value>ارسل الان</value>
   </data>
-  <data name="str_contact_content" xml:space="preserve">
-    <value>هل تريد بناء منتج تقني ولديك إستفسار او تحتاج الى استشارة إذاً انت في المكان الصحيح، لا تتردد بالتواصل معنا</value>
-  </data>
   <data name="str_contact_content_main" xml:space="preserve">
-    <value>لديك فكرة وتريد بناء منتج تقني لها اولديك إستفسار و تحتاج الى استشارة تقنية إذاً انت في المكان الصحيح، لا تتردد بالتواصل معنا</value>
+    <value>.لديك فكرة وتريد بناء منتج تقني لها اولديك إستفسار و تحتاج الى استشارة تقنية إذاً انت في المكان الصحيح، لا تتردد بالتواصل معنا</value>
   </data>
   <data name="str_contact_email" xml:space="preserve">
-    <value>عنوان بريدك الإلكتروني</value>
+    <value>البريد الإلكتروني</value>
   </data>
   <data name="str_contact_join" xml:space="preserve">
     <value>الإشتراك برسائل البريد الإلكتروني</value>
   </data>
   <data name="str_contact_mobile" xml:space="preserve">
-    <value>موبيل:</value>
+    <value>موبيل</value>
   </data>
   <data name="str_contact_msg" xml:space="preserve">
     <value>رسالتك</value>
@@ -312,7 +309,5 @@
   <data name="str_title_footer" xml:space="preserve">
     <value>تيك نكزس للحلول التقنية - شركة الشخص الواحد ذ م م</value>
   </data>
-  <data name="str_welcome_message" xml:space="preserve">
-    <value>مرحباً</value>
-  </data>
+
 </root>
