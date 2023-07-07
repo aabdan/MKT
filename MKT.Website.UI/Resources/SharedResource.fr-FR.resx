@@ -225,6 +225,12 @@
   <data name="str_btn_learn_more" xml:space="preserve">
     <value>En savoir plus</value>
   </data>
+  <data name="str_build_app_guid_1" xml:space="preserve">
+    <value>Pour télécharger le guide de construction de l'application</value>
+  </data>
+  <data name="str_build_app_guid_2" xml:space="preserve">
+    <value>Veuillez remplir les informations suivantes :</value>
+  </data>
   <data name="str_client" xml:space="preserve">
     <value>Clients</value>
   </data>

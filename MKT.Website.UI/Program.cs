@@ -115,11 +115,15 @@ else
     app.UseDeveloperExceptionPage(developerExceptionPageoptions);
 }
 
+app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
+
+
 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 app.UseHsts();
 
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles(new StaticFileOptions
 {
     //Google Page Speed- Serve static assets with an efficient cache policy
@@ -150,7 +154,6 @@ app.UseRewriter(new RewriteOptions()
             .AddRedirectToNonWwwPermanent()
             .AddRedirectToHttps()
          );
-app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
 
 app.UseAuthorization();

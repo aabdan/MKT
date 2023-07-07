@@ -225,6 +225,12 @@
   <data name="str_btn_learn_more" xml:space="preserve">
     <value>إعرف أكثر</value>
   </data>
+  <data name="str_build_app_guid_1" xml:space="preserve">
+    <value>لتحميل مراحل بناء و تطوير منتج تقني ،</value>
+  </data>
+  <data name="str_build_app_guid_2" xml:space="preserve">
+    <value>يرجى ادخال البيانات التالية :</value>
+  </data>
   <data name="str_client" xml:space="preserve">
     <value>عملاؤنا</value>
   </data>
