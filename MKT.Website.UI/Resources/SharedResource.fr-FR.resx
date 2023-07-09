@@ -150,6 +150,9 @@
   <data name="str-ecommerce-title" xml:space="preserve">
     <value>commerce électronique</value>
   </data>
+  <data name="str-get-free-consultation" xml:space="preserve">
+    <value>Obtenez une consultation gratuite</value>
+  </data>
   <data name="str-it-content" xml:space="preserve">
     <value>Planification, meilleures pratiques, services gérés, exécution</value>
   </data>
@@ -167,6 +170,9 @@
   </data>
   <data name="str-services-message" xml:space="preserve">
     <value>Voici un aperçu de ce que nous pouvons faire</value>
+  </data>
+  <data name="str-start-now" xml:space="preserve">
+    <value>Commencez maintenant</value>
   </data>
   <data name="str-title-clients" xml:space="preserve">
     <value>Nos clients</value>

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = @_localization.Getkey("str-ecommerce-title");
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+
+
+
+<br />
+<br />
+<br />
+<div dir=@_localization.Getkey("lang_dir")>
+
+    <div class="p-5">
+
+    <div class="ps-2">
+            <div class="bg-light border p-5">
+                <span class="card-img py-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="fill:#0054A6;width:70px;height:70px;" class="bi bi-bag-heart icon-resized" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"></path>
+                    </svg>
+                </span>
+                <div class="card-body py-2">
+                    <h1 class="card-title mt-3 text-uppercase" style="color:#0054A6;">@_localization.Getkey("str-ecommerce-title")</h1>
+                    <p class="card-text mt-4 pb-3">@_localization.Getkey("str-ecommerce-content")</p>
+                </div>
+                <a asp-controller="Home" asp-action="ContactUs" dir=@_localization.Getkey("lang_dir") class="text-light btn btn-primary me-1 p-3 text-capitalize lift fs-4" style="background-color: rgb(0, 84, 166)!important;">
+                    @_localization.Getkey("str-start-now")   &nbsp;  <i class="fa-solid fa-arrow-left text-light d-none d-md-inline ms-2"></i>
+                </a>
+            </div>
+ 
+    </div>
+  
+    </div>
+
+
+    <Partial name="~/Views/Home/_ContactUsPartial.cshtml" />
+</div>

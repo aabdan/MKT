@@ -43,10 +43,11 @@ builder.Services.Configure<RequestLocalizationOptions>(
 
             };
 
-        options.DefaultRequestCulture = new RequestCulture(culture: "ar-AE", uiCulture: "ar-AE");
-        //options.SetDefaultCulture("ar-AE");
+        options.DefaultRequestCulture = new RequestCulture(supportedCultures[0]);
         options.SupportedCultures = supportedCultures;
         options.SupportedUICultures = supportedCultures;
+        options.SetDefaultCulture("ar-AE");
+
 
         //options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
 

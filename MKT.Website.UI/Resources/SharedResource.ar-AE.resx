@@ -150,6 +150,9 @@
   <data name="str-ecommerce-title" xml:space="preserve">
     <value>التجارة الإلكترونية</value>
   </data>
+  <data name="str-get-free-consultation" xml:space="preserve">
+    <value>أحصل على إستشارة مجانية</value>
+  </data>
   <data name="str-it-content" xml:space="preserve">
     <value>التخطيط وأفضل الممارسات والخدمات المدارة والتنفيذ</value>
   </data>
@@ -166,7 +169,10 @@
     <value>تطبيقات الجوال</value>
   </data>
   <data name="str-services-message" xml:space="preserve">
-    <value>هذه لمحة عما يمكننا القيام به</value>
+    <value> خدماتنا تشمل كافة الجوانب التقنية التي تحتاجها فكرتك اللامعة لكي تبدأ، أو شركتك الحالية لكي تواكب التطور، ونلخصها لك في نقاط سريعة كالتالي:</value>
+  </data>
+  <data name="str-start-now" xml:space="preserve">
+    <value>إبدأ الآن</value>
   </data>
   <data name="str-title-clients" xml:space="preserve">
     <value>عملاؤنا</value>
@@ -309,5 +315,4 @@
   <data name="str_title_footer" xml:space="preserve">
     <value>تيك نكزس للحلول التقنية - شركة الشخص الواحد ذ م م</value>
   </data>
-
 </root>

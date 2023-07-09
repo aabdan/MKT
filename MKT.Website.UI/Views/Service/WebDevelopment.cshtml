@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = @_localization.Getkey("str-web-title");
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+
+
+<br />
+<br />
+<br />
+<div dir=@_localization.Getkey("lang_dir")>
+    <div class="p-5">
+
+    <div class="px-1">
+            <div class="bg-light border p-5">
+                <span class="card-img py-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="fill:#0054A6;width:70px;height:70px;" class="bi bi-back icon-resized" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"></path>
+                    </svg>
+                </span>
+                <div class="card-body py-2 px-3">
+                    <h1 class="card-title mt-3 text-uppercase" style="color:#0054A6;">@_localization.Getkey("str-web-title")</h1>
+                    <p class="card-text mt-4 pb-2">@_localization.Getkey("str-web-content")</p>
+                </div>
+                <a asp-controller="Home" asp-action="ContactUs" dir=@_localization.Getkey("lang_dir") class="text-light btn btn-primary me-1 p-3 text-capitalize lift fs-4" style="background-color: rgb(0, 84, 166)!important;">
+                    @_localization.Getkey("str-start-now")   &nbsp;  <i class="fa-solid fa-arrow-left text-light d-none d-md-inline ms-2"></i>
+                </a>
+            </div>
+    </div>
+    </div>
+    <Partial name="~/Views/Home/_ContactUsPartial.cshtml" />
+</div>

@@ -9,7 +9,7 @@ async function initMap() {
 
     marker = new google.maps.Marker({
         position: { lat: 24.34041248980433, lng: 54.534240861973046 },
-        icon: "../img/TechNexus/icon_marker2.svg",
+        icon: "/img/TechNexus/icon_marker2.svg",
         map,
     });
 
@@ -20,7 +20,7 @@ async function initMap() {
                 {
                     marker = new google.maps.Marker({
                         position: { lat: 24.340473379605356, lng: 54.534223203124064 },
-                        icon: "../img/TechNexus/icon_marker2.svg",
+                        icon: "/img/TechNexus/icon_marker2.svg",
                         map,
                     });
                 }
@@ -29,7 +29,7 @@ async function initMap() {
                 {
                     marker = new google.maps.Marker({
                         position: { lat: 24.340389252402634, lng: 54.53423197477317 },
-                        icon: "../img/TechNexus/icon_marker2.svg",
+                        icon: "/img/TechNexus/icon_marker2.svg",
                         map,
                     });
                 }
@@ -39,7 +39,7 @@ async function initMap() {
                 {
                     marker = new google.maps.Marker({
                         position: { lat: 24.340402033612865, lng: 54.534236236818664 },
-                        icon: "../img/TechNexus/icon_marker2.svg",
+                        icon: "/img/TechNexus/icon_marker2.svg",
                         map,
                     });
                 }
@@ -49,7 +49,7 @@ async function initMap() {
                 {
                     marker = new google.maps.Marker({
                         position: { lat: 24.340396535073722, lng: 54.53423724265299 },
-                        icon: "../img/TechNexus/icon_marker2.svg",
+                        icon: "/img/TechNexus/icon_marker2.svg",
                         map,
                     });
                 }
@@ -58,7 +58,7 @@ async function initMap() {
                 {
                     marker = new google.maps.Marker({
                         position: { lat: 24.340397146022514, lng: 54.53423724265299 },
-                        icon: "../img/TechNexus/icon_marker2.svg",
+                        icon: "/img/TechNexus/icon_marker2.svg",
                         map,
                     });
                 }
@@ -66,7 +66,7 @@ async function initMap() {
             default: {
                 marker = new google.maps.Marker({
                     position: { lat: 24.34041248980433, lng: 54.534240861973046 },
-                    icon: "../img/TechNexus/icon_marker2.svg",
+                    icon: "/img/TechNexus/icon_marker2.svg",
                     map,
                 });
             }
