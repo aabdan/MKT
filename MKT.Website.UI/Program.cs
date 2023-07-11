@@ -19,8 +19,7 @@ using System.Text.Json.Serialization;
 using System.Configuration;
 using System.Reflection;
 using System.Globalization;
-
-
+using MKT.Website.UI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -146,6 +145,7 @@ app.MapGet("/sitemap.xml", async (IXmlSitemapGenerator sitemapGenerator) =>
 
 app.UseRouting();
 //app.UseMiddleware<RedirectMiddleware>("technexus.com", "https://www.technexus.com");
+app.UseMiddleware<UrlComponentMiddleware>();
 app.UseRewriter(new RewriteOptions()
             .AddRedirectToNonWwwPermanent()
             .AddRedirectToHttps()
