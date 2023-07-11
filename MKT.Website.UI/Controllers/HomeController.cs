@@ -141,5 +141,10 @@ namespace MKT.Website.Controllers
 
             return View();
         }
+
+        public IActionResult TesterPage()
+        {
+            return View();
+        }
     }
 }

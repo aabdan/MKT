@@ -123,6 +123,9 @@
   <data name="lang_dir" xml:space="preserve">
     <value>rtl</value>
   </data>
+  <data name="str-About" xml:space="preserve">
+    <value>عن تك نكزس</value>
+  </data>
   <data name="str-animation-direction" xml:space="preserve">
     <value>animation-direction:reverse</value>
   </data>

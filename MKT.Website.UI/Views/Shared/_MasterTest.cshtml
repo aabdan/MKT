@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
+<html lang="en">
 
-<html lang="ar" >
 <head>
 
     <meta charset="utf-8">
@@ -9,50 +9,41 @@
     <meta name="author" content="Tech Nexus" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-          rel="stylesheet" />
+
+    <!-- MDB for Social Media Icons--> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/30139f6fae.js" crossorigin="anonymous"></script>
+
+
+
+
+
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
     <!-- GOOGLE WEB FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+    <!-- BASE CSS -->
+    <link href="~/css/betler/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="~/css/betler/vendors.css" rel="stylesheet">
+    <link href="~/css/betler/style.css" rel="stylesheet">
 
+    <!-- EXTRA CSS RTL STYLES ONLY -->
+    <link href="~/css/betler/extra_rtl_styles.css" rel="stylesheet">
 
-    <link href="~/css/particles/style.css" rel="stylesheet" media="screen" />
-    <link href="~/css/site.css" rel="stylesheet" />
-    <link href="~/css/betler/style.css" rel="stylesheet" />
+    <!-- YOUR CUSTOM CSS -->
+    <link href="~/css/betler/custom.css" rel="stylesheet">
 
-
-
-
-
-
-    <script src="~/js/site.js"></script>
-
-    <script src="~/lib/jquery/jquery.slim.min.js"></script>
-    <script src="~/jquery-validate/jquery.validate.min.js"></script>
-    <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
 </head>
+
 <body>
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMFRB3D" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-
-
-    <div>
-        <a href="https://wa.me/971507746099?text=مرحباً %20" title="whatsapp" class="float" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
-
-    </div>
-
-
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" dir=@_localization.Getkey("lang_dir") style=" font-size: 2vw;">
+       <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" dir=@_localization.Getkey("lang_dir") style=" font-size: 2vw;">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-controller="Home" asp-action="Main" title="technexus-logo">
                     <img src=@_localization.Getkey("str_logo") alt="Tech Nexus Logo" style="max-height:10vh;width:300px" />
@@ -114,19 +105,17 @@
         </nav>
     </header>
 
-    <!-- Login window -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
 
-    <a href="https://wa.me/971507746099?text=مرحباً %20" title="whatsapp" class="float" target="_blank">
-        <i class="fa-brands fa-whatsapp my-float"></i>
-    </a>
 
-    <div>
-        @RenderBody()
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
     </div>
 
 
-    <footer class=" text-center text-lg-start bg-white text-muted" >
+    <footer class=" text-center text-lg-start bg-white text-muted fixed-bottom" >
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-light" dir=@_localization.Getkey("lang_dir")>
             <!-- Left -->
@@ -164,13 +153,11 @@
         <!-- Copyright -->
     </footer>
 
-    <!-- MDB -->
-    <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
-
     <script src="~/js/betler/common_scripts.js"></script>
     <script src="~/js/betler/common_func.js"></script>
-
+    <!-- SPECIFIC SCRIPTS -->
+    <script src="~/js/betler/jquery.validate.js"></script>
+    <script src="~/js/betler/contact_func.js"></script>
 
     <script>
         function showLogin() {

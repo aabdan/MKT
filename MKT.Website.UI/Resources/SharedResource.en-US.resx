@@ -123,6 +123,9 @@
   <data name="lang_dir" xml:space="preserve">
     <value>ltr</value>
   </data>
+  <data name="str-About" xml:space="preserve">
+    <value>About TECH Nexus</value>
+  </data>
   <data name="str-animation-direction" xml:space="preserve">
     <value>animation-direction:normal</value>
   </data>
@@ -166,7 +169,7 @@
     <value>Transform your business with cutting-edge tech solutions in Abu Dhabi. Offering mobile and web app development, our tech company specializes in digital transformation services for businesses. Take your online presence to the next level and achieve your business goals with Tech Nexus.</value>
   </data>
   <data name="str-mobile-content" xml:space="preserve">
-    <value>Developing iOS &amp;amp; Android Native and Hybrid Apps</value>
+    <value>Developing iOS &amp; Android Native and Hybrid Apps</value>
   </data>
   <data name="str-mobile-title" xml:space="preserve">
     <value>mobile development</value>

@@ -123,6 +123,9 @@
   <data name="lang_dir" xml:space="preserve">
     <value>ltr</value>
   </data>
+  <data name="str-About" xml:space="preserve">
+    <value>À propos de Tech Nexus</value>
+  </data>
   <data name="str-animation-direction" xml:space="preserve">
     <value>animation-direction:normal</value>
   </data>
