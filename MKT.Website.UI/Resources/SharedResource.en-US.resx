@@ -132,6 +132,9 @@
   <data name="str-clients-message" xml:space="preserve">
     <value>Here is a glimpse of what we can do</value>
   </data>
+  <data name="str-contact-Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
   <data name="str-cyber-content" xml:space="preserve">
     <value>Protect, Defense and Assurance, Risk and Policies compliance</value>
   </data>
@@ -239,7 +242,7 @@ We strive to lead in the development of high-quality TECH solutions based on the
     <value>Learn more</value>
   </data>
   <data name="str_build_app_guid_1" xml:space="preserve">
-    <value>To download App Build Guid</value>
+    <value>To download App Build Guide</value>
   </data>
   <data name="str_build_app_guid_2" xml:space="preserve">
     <value>Please fill the following info:</value>

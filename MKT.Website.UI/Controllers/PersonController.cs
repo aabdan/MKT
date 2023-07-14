@@ -51,7 +51,7 @@ namespace MKT.Website.Controllers
                 _db.SaveChanges();
                 TempData["success"] = "شكراً لتحميلك دليل بناء منتج تقني";
 
-                return RedirectToAction("DownloadGuid");
+                return RedirectToAction("DownloadGuide");
             }
             return View(obj);
 

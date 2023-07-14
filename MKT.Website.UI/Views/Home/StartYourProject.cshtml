@@ -1,0 +1,175 @@
+﻿@model Person
+@{
+    Layout = "~/Views/Shared/_Master.cshtml";
+    ViewData["Title"] = @_localization.Getkey("str_start_your_project");
+}
+
+<br />
+<br />
+<br />
+
+<div>
+    <div class="background-image" data-background="url(/img/betler/main_bg_2.jpg)" style="padding-bottom:0px">
+        <div class="min-vh-100 d-flex flex-column opacity-mask" data-opacity-mask="rgba(0, 84, 166, 0.6)">
+
+            <div>
+                <section id="contact">
+                    <div class="container py-5">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="text-light pb-5" dir=@_localization.Getkey("lang_dir")>
+                                    <h2 class="text-light" dir=@_localization.Getkey("lang_dir")> @_localization.Getkey("str_start_your_project")</h2>
+                                    <p class="lead" dir=@_localization.Getkey("lang_dir")>@_localization.Getkey("str_contact_content_main")</p>
+                                    <div class=" border-bottom border-5" style="width: 100px; "> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3" style="background-color:rgb(152 193 232 / 60%)">
+
+                            <div class="col-12 col-md-6">
+                                <form id="contact-form" method="post" class="p-5 pt-4 px-3 rounded-2" style="background-color:rgb(152 193 232 / 60%)">
+
+                                    <div class="mb-3 ">
+                                        <input asp-for="PersonName" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_name")" dir=@_localization.Getkey("lang_dir") />
+                                        <span asp-validation-for="PersonName" class="text-danger d-block mt-1"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input asp-for="PersonPhone" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_phone")" dir=@_localization.Getkey("lang_dir") />
+                                        <span asp-validation-for="PersonPhone" class="text-danger d-block mt-1"></span>
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <input asp-for="PersonEmail" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_email")" dir=@_localization.Getkey("lang_dir") />
+                                        <span asp-validation-for="PersonEmail" class="text-danger d-block mt-1 "></span>
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input asp-for="PersonMessage" type="textarea" required class="form-control py-3" placeholder="@_localization.Getkey("str-contact-Message")" dir=@_localization.Getkey("lang_dir") />
+                                        <span asp-validation-for="PersonMessage" class="text-danger d-block mt-1 "></span>
+
+                                    </div>
+
+                                    <div class="form-group terms mb-3" dir=@_localization.Getkey("lang_dir")>
+
+                                        <label class="container_check" dir=@_localization.Getkey("lang_dir")>
+                                            <input class="form-check-input" type="checkbox" asp-for="PersonSubscription" checked name="PersonSubscription" id="agree">
+                                            <label class="form-check-label" for="agree">
+                                                @_localization.Getkey("str_contact_accept") <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">@_localization.Getkey("str_contact_join")</a>.
+
+                                            </label>
+
+                                        </label>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <button id="my-form-button" type="submit" class="btn btn-primary btn-block btn-lg pt-3 pb-3 float-right" title="Send Now" dir=@_localization.Getkey("lang_dir") style="background-color: rgb(0, 84, 166)!important;">
+                                            @_localization.Getkey("str_contact_btn")
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-12 col-md-6 fs-4">
+                                <div class="center rounded-2">
+                                    <div class="text-center">
+                                        <div class="fs-3">@_localization.Getkey("str_contact_welcome")</div>
+                                        <hr />
+
+                                        <p dir=@_localization.Getkey("lang_dir")>
+                                            @_localization.Getkey("str_contact_phone")
+                                            <span>
+
+                                                <a href="tel:0097126276897"> 0097126276897</a>
+                                            </span>
+                                        </p>
+                                        <p dir=@_localization.Getkey("lang_dir")>
+                                            @_localization.Getkey("str_contact_mobile")
+                                            <span>
+
+                                                <a href="tel:00971507746099" dir=@_localization.Getkey("lang_dir")>00971507746099</a>
+                                            </span>
+                                        </p>
+                                        <p dir=@_localization.Getkey("lang_dir")>
+                                            @_localization.Getkey("str_contact_whatsapp")
+                                            <span>
+                                                <a href="https://wa.me/971507746099?text=مرحباً %20" dir=@_localization.Getkey("lang_dir") target="_blank">00971507746099</a>
+
+                                            </span>
+                                        </p>
+
+                                        <p dir=@_localization.Getkey("lang_dir")>@_localization.Getkey("str_contact_ourmail") <span><a href="mailto:info@technexus.ae" title="email-to-info-technexus" dir=@_localization.Getkey("lang_dir")>info@technexus.ae</a></span></p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="success-message" class="alert alert-success mt-3 text-center fs-3 p-2" style="display: none;">@_localization.Getkey("str_contact_thanks")</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal terms -->
+<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="termsLabel">الإشتراك</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>هل ترغب بمعرفة المزيد عن <strong>بناء المنتجات التقنية</strong>, يرجى الإشتراك.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn_1" data-bs-dismiss="modal">إغلاق</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<script>
+    $(function () {
+        $('#contact-form').submit(function (event) {
+            event.preventDefault();
+
+            var formData = $(this).serialize();
+
+            $.ajax({
+                url: '@Url.Action("Create", "Funnel")',
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    $('#success-message').show();
+                    $('#contact-form')[0].reset();
+                    setTimeout(function () {
+                        $('#success-message').fadeOut();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+

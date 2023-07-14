@@ -48,45 +48,6 @@ namespace MKT.Website.Controllers
         #endregion
 
 
-        #region Email
-        [Route("IndexAsync")]
-        public async Task<IActionResult> IndexAsync()
-        {
-            // create email message
-            var email = new MimeMessage();
-            email.From.Add(MailboxAddress.Parse("info@technexus.ae"));
-            email.To.Add(MailboxAddress.Parse("ahmadabdan@hotmail.com"));
-            email.Subject = "MKT TechNexus Email";
-            email.Body = new TextPart(TextFormat.Plain) { Text = "Email from MKT TechNexus Email" };
-
-            // send email
-            using (var smtpClient = new MailKit.Net.Smtp.SmtpClient())
-            {
-                try
-                {
-                    await smtpClient.ConnectAsync("smtp.office365.com", 587, SecureSocketOptions.StartTls);
-                    await smtpClient.AuthenticateAsync("info@technexus.ae", "");
-                    await smtpClient.SendAsync(email);
-                }
-
-                catch (Exception)
-                {
-                    //log an error message or throw an exception, or both.
-                    throw;
-                }
-                finally
-                {
-                    await smtpClient.DisconnectAsync(true);
-                    smtpClient.Dispose();
-                }
-            }
-
-            return View();
-        }
-        #endregion
-
-
-
         public IActionResult About()
         {
             return View();
@@ -142,6 +103,10 @@ namespace MKT.Website.Controllers
             return View();
         }
 
+        public IActionResult StartYourProject()
+        {
+            return View();
+        }
         public IActionResult TesterPage()
         {
             return View();

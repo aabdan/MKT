@@ -35,6 +35,12 @@
 
                         </div>
 
+                        <div class="mb-3">
+                            <input asp-for="PersonMessage" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str-contact-Message")" dir=@_localization.Getkey("lang_dir") />
+                            <span asp-validation-for="PersonMessage" class="text-danger d-block mt-1 "></span>
+
+                        </div>
+
                         <div class="form-group terms mb-3" dir=@_localization.Getkey("lang_dir")>
 
                             <label class="container_check" dir=@_localization.Getkey("lang_dir")>

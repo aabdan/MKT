@@ -129,6 +129,9 @@
   <data name="str-animation-direction" xml:space="preserve">
     <value>animation-direction:normal</value>
   </data>
+  <data name="str-contact-Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
   <data name="str-cyber-content" xml:space="preserve">
     <value>Protection, défense et assurance, conformité aux risques et aux politiques</value>
   </data>

@@ -129,6 +129,9 @@
   <data name="str-animation-direction" xml:space="preserve">
     <value>animation-direction:reverse</value>
   </data>
+  <data name="str-contact-Message" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
   <data name="str-cyber-content" xml:space="preserve">
     <value>الحماية وتأمين الخدمات الإلكترونية</value>
   </data>

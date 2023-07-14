@@ -24,6 +24,15 @@ namespace MKT.Website.Models
         [MaxLength(50, ErrorMessage = "Please check your E-mail")]
         [EmailAddress(ErrorMessage = "Please Enter your E-mail correctly")]
         public string? PersonEmail { get; set; }
+        //Individual or Company
+        public string? PersonType { get; set; }
+        [Required(ErrorMessage = "Please Enter some Info about requested service")]
+        [MinLength(50, ErrorMessage = "Please add more details Message")]
+        [MaxLength(500, ErrorMessage = "Please just add summary your Message")]
+        public string? PersonMessage { get; set; }
+        public string? PersonRequestedService { get; set; }
+        public string? PersonBudget { get; set; }
+        public string? PersonTimeFrame { get; set; }
         public string? PersonSubscription { get; set; }
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
 

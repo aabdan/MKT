@@ -19,7 +19,7 @@ namespace MKT.Infrastructure.AzureBlobStorage
         private string storageAccountName;
         private string accessKey;
         private StorageSharedKeyCredential _credential;
-        private BlobServiceClient _blobServiceClient ;
+        private BlobServiceClient _blobServiceClient;
         private BlobContainerClient _blobContainerClient;
         private BlobClient _blobClient;
 
@@ -41,7 +41,7 @@ namespace MKT.Infrastructure.AzureBlobStorage
             _SetupBlobServiceClient();
         }
 
- 
+
 
 
         private void _SetupBlobServiceClient()
@@ -52,23 +52,23 @@ namespace MKT.Infrastructure.AzureBlobStorage
             _credential = new StorageSharedKeyCredential(storageAccountName, accessKey);
 
             // 2.Create a BlobServiceClient object using the StorageSharedKeyCredential object
-            _blobServiceClient  = new BlobServiceClient(new Uri($"https://{storageAccountName}.blob.core.windows.net"), _credential);
+            _blobServiceClient = new BlobServiceClient(new Uri($"https://{storageAccountName}.blob.core.windows.net"), _credential);
         }
 
         private async Task<BlobContainerClient> _SetupBlobContainerClient(ResourceType resourceType = ResourceType.BuildAppGuid)
         {
 
             // 3.Retrieve the desired container using the BlobServiceClient object and the container name
-            _blobContainerClient  = _blobServiceClient .GetBlobContainerClient(_containersNames[resourceType]);
+            _blobContainerClient = _blobServiceClient.GetBlobContainerClient(_containersNames[resourceType]);
 
             // Check if the container exists
-            if (!_blobContainerClient .Exists())
+            if (!_blobContainerClient.Exists())
             {
                 // Create the container if it does not exist
-                await _blobContainerClient .CreateIfNotExistsAsync();
+                await _blobContainerClient.CreateIfNotExistsAsync();
             }
 
-            return _blobContainerClient ;
+            return _blobContainerClient;
         }
 
         private string _GenerateFileName(string fileName)
@@ -84,7 +84,7 @@ namespace MKT.Infrastructure.AzureBlobStorage
             {
                 await _blobClient.DownloadToAsync(stream);
                 File.WriteAllBytes("<localPath>/" + blobName, stream.ToArray());
-                Console.WriteLine("Blob downloaded successfully!");
+                Console.WriteLine("PDF Build App Guide downloaded successfully!");
             }
         }
 
