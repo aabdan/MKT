@@ -55,7 +55,7 @@
         <nav class="navbar navbar-expand-lg fixed-top" dir=@_localization.Getkey("lang_dir") style=" font-size: 2vw;">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-controller="Home" asp-action="Main" title="technexus-logo">
-                    <img src=@_localization.Getkey("str_logo") alt="Tech Nexus Logo" style="max-height:10vh;width:300px" />
+                    <img src=@_localization.Getkey("str_logo") alt="Tech Nexus Logo" style="max-height:10vh;max-width:100%" />
                 </a>
                 <button class="navbar-toggler" id="toggleButton" type="button" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -121,7 +121,7 @@
         <i class="fa-brands fa-whatsapp my-float"></i>
     </a>
 
-    <div>
+    <div style="margin-top:100px">
         <main role="main">
             @RenderBody()
         </main>
