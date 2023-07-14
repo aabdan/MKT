@@ -79,6 +79,7 @@ canvas {
     .mobile-links a {
         display: block;
         padding: 10px;
+        font-size: 18px;
     }
 }
 
