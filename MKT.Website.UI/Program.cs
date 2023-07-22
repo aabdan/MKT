@@ -93,6 +93,10 @@ builder.Services.AddResponseCompression(options =>
     options.EnableForHttps = true; // Enable compression for HTTPS requests
 });
 
+// Response Caching Middleware
+builder.Services.AddResponseCaching();
+
+
 
 var app = builder.Build();
 
@@ -175,6 +179,7 @@ app.MapControllerRoute(
 //    name: "default",
 //    pattern: "{controller}/{action}/{id?}");
 
+app.UseResponseCaching();
 
 
 app.Run();
