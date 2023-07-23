@@ -280,7 +280,7 @@
     <value>le téléphone</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
-    <value>Merci d'avoir téléchargé le Guide technique de création de produit</value>
+    <value>Merci d'avoir</value>
   </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>Contactez-nous</value>

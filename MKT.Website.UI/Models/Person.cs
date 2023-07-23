@@ -27,7 +27,7 @@ namespace MKT.Website.Models
         //Individual or Company
         public string? PersonType { get; set; }
         [Required(ErrorMessage = "Please Enter some Info about requested service")]
-        [MinLength(50, ErrorMessage = "Please add more details Message")]
+        [MinLength(5, ErrorMessage = "Please add more details Message")]
         [MaxLength(500, ErrorMessage = "Please just add summary your Message")]
         public string? PersonMessage { get; set; }
         public string? PersonRequestedService { get; set; }

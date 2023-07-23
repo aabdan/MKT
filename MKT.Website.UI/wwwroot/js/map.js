@@ -1,9 +1,11 @@
 var marker = "";
 let map = "";
 async function initMap() {
+
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 11,
-        center: { lat: 24.390426217012137, lng: 54.5343818870348 },
+        //Specify Location 23/07/2023
+        center: { lat: 24.390426217012137, lng: 54.4643818870348 },
         streetViewControl: false,
     });
 
