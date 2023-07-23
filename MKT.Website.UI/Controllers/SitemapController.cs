@@ -13,7 +13,7 @@ namespace MKT.Website.UI.Controllers
         {
             var sitemapNodes = new List<SitemapNode>
             {
-                new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("Index", "Home")),
+                new SitemapNode(DateTime.UtcNow, 1, "daily", Url.Action("Index", "Home")),
                 new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("About", "Home")),
                 new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("ContactUs", "Home")),
                 new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("Index", "Person")),
