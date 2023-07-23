@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <input asp-for="PersonMessage" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str-contact-Message")" dir=@_localization.Getkey("lang_dir") />
+                            <textarea asp-for="PersonMessage" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str-contact-Message")" dir=@_localization.Getkey("lang_dir")></textarea>
                             <span asp-validation-for="PersonMessage" class="text-danger d-block mt-1 "></span>
 
                         </div>
@@ -73,25 +73,25 @@
                                 @_localization.Getkey("str_contact_phone")
                                 <span>
 
-                                    <a href="tel:0097126276897" > 0097126276897</a>
+                                    <a href="tel:0097126276897" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#0054A6'"> 0097126276897</a>
                                 </span>
                             </p>
                             <p dir=@_localization.Getkey("lang_dir")>
                                 @_localization.Getkey("str_contact_mobile")
                                 <span>
 
-                                    <a href="tel:00971507746099" dir=@_localization.Getkey("lang_dir")>00971507746099</a>
+                                    <a href="tel:00971507746099" dir=@_localization.Getkey("lang_dir") onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#0054A6'">00971507746099</a>
                                 </span>
                             </p>
                             <p dir=@_localization.Getkey("lang_dir")>
                                 @_localization.Getkey("str_contact_whatsapp")
                                 <span>
-                                    <a href="https://wa.me/971507746099?text=مرحباً %20" dir=@_localization.Getkey("lang_dir") target="_blank">00971507746099</a>
+                                    <a href="https://wa.me/971507746099?text=مرحباً %20" dir=@_localization.Getkey("lang_dir") target="_blank" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#0054A6'">00971507746099</a>
 
                                 </span>
                             </p>
 
-                            <p dir=@_localization.Getkey("lang_dir")>@_localization.Getkey("str_contact_ourmail") <span><a href="mailto:info@technexus.ae" title="email-to-info-technexus" dir=@_localization.Getkey("lang_dir")>info@technexus.ae</a></span></p>
+                            <p dir=@_localization.Getkey("lang_dir")>@_localization.Getkey("str_contact_ourmail") <span><a href="mailto:info@technexus.ae" title="email-to-info-technexus" dir=@_localization.Getkey("lang_dir") onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#0054A6'">info@technexus.ae</a></span></p>
 
 
                         </div>

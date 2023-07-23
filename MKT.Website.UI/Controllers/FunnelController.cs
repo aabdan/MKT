@@ -7,6 +7,14 @@ using MKT.Website.Models;
 
 namespace MKT.Website.UI.Controllers
 {
+    public enum ContactType
+    {
+        MenuItem,
+        Offer,
+        Article,
+        Invoice,
+        BuildAppGuid
+    }
     public class FunnelController : Controller
     {
 
@@ -49,7 +57,7 @@ namespace MKT.Website.UI.Controllers
                 _db.SaveChanges();
                 if (obj.PersonEmail is not null && obj.PersonName is not null)
                 {
-                    _ = SendBuildAppGuideByEmail(obj.PersonEmail, obj.PersonName);
+                    _ = SendBuildAppGuideByEmail(obj.PersonEmail, obj.PersonName, ContactType);
                 }
 
                 return Ok();

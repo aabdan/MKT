@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Development.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Production.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Ducksoft.NetCore.Razor.Sitemap" Version="1.0.103" />
     <PackageReference Include="MailKit" Version="4.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
