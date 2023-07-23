@@ -13,27 +13,33 @@ namespace MKT.Website.UI.Controllers
         {
             var sitemapNodes = new List<SitemapNode>
             {
-                new SitemapNode(Url.Action("Index", "Home")),
-                new SitemapNode(Url.Action("About", "Home")),
-                new SitemapNode(Url.Action("ContactUs", "Home")),
-                new SitemapNode(Url.Action("Index", "Person")),
-                new SitemapNode(Url.Action("WebDevelopment", "Service")),
-                //new SitemapNode(Url.Action("Register", "Account")),
-                new SitemapNode(Url.Action("Index", "Company")),
-                //new SitemapNode(Url.Action("Index", "Funnel")),
+                new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("Index", "Home")),
+                new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("About", "Home")),
+                new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("ContactUs", "Home")),
+                new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("Index", "Person")),
+                new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("WebDevelopment", "Service")),
+                new SitemapNode(DateTime.UtcNow, 0.6400, "daily", Url.Action("Index", "Company")),
                 // Add more URLs to your sitemap here
             };
 
             return new SitemapResult(sitemapNodes);
+            //return View("Sitemap");
         }
 
         public class SitemapNode
         {
             public string Url { get; set; }
+            public DateTime LastModified { get; set; } 
+            public double Priority { get; set; }
+            public String Frequency { get; set; }
 
-            public SitemapNode(string url)
+
+            public SitemapNode(DateTime datetime, double priority, string frequency, string url)
             {
                 Url = url;
+                LastModified = datetime;
+                Priority = priority;
+                Frequency = frequency;
             }
         }
 
@@ -59,6 +65,9 @@ namespace MKT.Website.UI.Controllers
                     {
                         writer.WriteLine("<url>");
                         writer.WriteLine($"<loc>{node.Url}</loc>");
+                        writer.WriteLine($"<lastmod>{node.LastModified}</lastmod>");
+                        writer.WriteLine($"<changefreq>{node.Frequency}</changefreq>");
+                        writer.WriteLine($"<priority>{node.Priority}</priority>");
                         writer.WriteLine("</url>");
                     }
 
