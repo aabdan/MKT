@@ -21,6 +21,7 @@ using System.Reflection;
 using System.Globalization;
 using MKT.Website.UI.Middleware;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -97,6 +98,17 @@ builder.Services.AddResponseCompression(options =>
 // Response Caching Middleware
 builder.Services.AddResponseCaching();
 
+// allow Synchronous IO
+builder.Services.Configure<KestrelServerOptions>(options =>
+{
+    options.AllowSynchronousIO = true;
+});
+
+// If using IIS:
+builder.Services.Configure<IISServerOptions>(options =>
+{
+    options.AllowSynchronousIO = true;
+});
 
 
 var app = builder.Build();
