@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="ar" >
+<html >
 <head>
 
     <meta charset="utf-8">
@@ -22,13 +22,7 @@
     <link href="~/css/site.css" rel="stylesheet" />
     <link href="~/css/betler/style.css" rel="stylesheet" />
 
-
-
-
-
-
     <script src="~/js/site.js"></script>
-
     <script src="~/lib/jquery/jquery.slim.min.js"></script>
     <script src="~/jquery-validate/jquery.validate.min.js"></script>
     <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
@@ -44,8 +38,6 @@
         <a href="https://wa.me/971507746099?text=مرحباً %20" title="whatsapp" class="float" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
-
-
     </div>
 
 
@@ -69,7 +61,7 @@
                         <li class="nav-item pe-1"><a class="nav-link fs-4" asp-controller="Home" asp-action="ContactUs" title="contactus-technexus" style="text-decoration:none; color:#0054A6;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='#0054A6'">@_localization.Getkey("str_contact")</a></li>
 
                         <li class="nav-item ml-3">
-                            <a class="nav-link btn-outline-primary fs-5 btn-lg btn-radius display-6 lead" style="text-decoration:none; color:black;border-color:black; " onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='black'" asp-controller="Home" asp-action="StartYourProject" title="start-your-project-technexus">@_localization.Getkey("str_start_your_project")</a>
+                            <a class="nav-link btn-outline-primary fs-5 btn-lg btn-radius display-6 lead" style="color:black;border-color:black;" onmouseover="this.style.color='#69b3e3'" onmouseout="this.style.color='black'" asp-controller="Home" asp-action="StartYourProject" title="start-your-project-technexus">@_localization.Getkey("str_start_your_project")</a>
                         </li>
 
                         <li class="nav-item pe-1">
@@ -119,15 +111,15 @@
         <i class="fa-brands fa-whatsapp my-float"></i>
     </a>
 
-    <div style="margin-top:90px">
-        <main role="main">
+    <div>
+        <main role="main" style="min-height:80vh;">
             @RenderBody()
         </main>
     </div>
 
    
   
-    <footer class=" text-center text-lg-start bg-white text-muted">
+    <footer class="text-center text-lg-start bg-white text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-light" dir=@_localization.Getkey("lang_dir")>
             <!-- Left -->
