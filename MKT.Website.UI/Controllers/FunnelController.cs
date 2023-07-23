@@ -4,16 +4,15 @@ using MimeKit.Text;
 using MimeKit;
 using MKT.Website.Data;
 using MKT.Website.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace MKT.Website.UI.Controllers
 {
     public enum ContactType
     {
-        MenuItem,
-        Offer,
-        Article,
-        Invoice,
-        BuildAppGuid
+        DownloadAppGuid,
+        ContactUs,
+        StartYourProject
     }
     public class FunnelController : Controller
     {
@@ -57,7 +56,7 @@ namespace MKT.Website.UI.Controllers
                 _db.SaveChanges();
                 if (obj.PersonEmail is not null && obj.PersonName is not null)
                 {
-                    _ = SendBuildAppGuideByEmail(obj.PersonEmail, obj.PersonName, ContactType);
+                    _ = SendBuildAppGuideByEmail(obj.PersonEmail, obj.PersonName, ContactType.ContactUs);
                 }
 
                 return Ok();
@@ -66,7 +65,7 @@ namespace MKT.Website.UI.Controllers
         }
 
         #region Email
-        public async Task<IActionResult> SendBuildAppGuideByEmail(string ToEmailAddress, string ToName)
+        public async Task<IActionResult> SendBuildAppGuideByEmail(string ToEmailAddress, string ToName, ContactType ContactType)
         {
             // create email message
             var email = new MimeMessage();
@@ -74,8 +73,25 @@ namespace MKT.Website.UI.Controllers
             email.To.Add(MailboxAddress.Parse(ToEmailAddress));
             email.Bcc.Add(MailboxAddress.Parse(_configuration.GetValue<string>("EmailConfiguration:From")));
 
-            email.Subject = _configuration.GetValue<string>("BuildAppGuideEmail:Subject");
-            email.Body = new TextPart(TextFormat.Plain) { Text = _configuration.GetValue<string>("BuildAppGuideEmail:Body") };
+            switch (ContactType)
+            {
+                case ContactType.ContactUs:
+                    email.Subject = _configuration.GetValue<string>("ContactUsEmail:Subject");
+                    email.Body = new TextPart(TextFormat.Plain) { Text = _configuration.GetValue<string>("ContactUsEmail:Body") };
+                    break;
+                case ContactType.DownloadAppGuid:
+                    email.Subject = _configuration.GetValue<string>("BuildAppGuideEmail:Subject");
+                    email.Body = new TextPart(TextFormat.Plain) { Text = _configuration.GetValue<string>("BuildAppGuideEmail:Body") };
+                    break;
+
+                default:
+                    email.Subject = _configuration.GetValue<string>("DefaultEmail:Subject");
+                    email.Body = new TextPart(TextFormat.Plain) { Text = _configuration.GetValue<string>("DefaultEmail:Body") };
+                    break;
+
+
+
+            }
 
             // send email
             using (var smtpClient = new MailKit.Net.Smtp.SmtpClient())
