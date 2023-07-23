@@ -21,18 +21,27 @@ namespace MKT.Website.UI.Middleware
             if ( url != null)
             {
                 string[] urlSegments = url.Value.Split('/');
+
                 if (urlSegments.Length > 1 && (urlSegments[1].Contains("ar-AE") || urlSegments[1].Contains("ar") || urlSegments[1].Contains("en-US")
-                    || urlSegments[1].Contains("en") || urlSegments[1].Contains("fr-FR") || urlSegments[1].Contains("fr")) ) {
+                    || urlSegments[1].Contains("en") || urlSegments[1].Contains("fr-FR") || urlSegments[1].Contains("fr")))
+                {
                     //context.Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
                     //CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(urlSegments[1])),
                     //new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddYears(1) });
-                    var culture = new CultureInfo(urlSegments[1] == "en"? "en-US": urlSegments[1] == "ar"? "ar-AE": "fr-FR");
+                    
+                    var culture = new CultureInfo(urlSegments[1] == "en" ? "en-US" : urlSegments[1] == "ar" ? "ar-AE" : "fr-FR");
+                    //var culture = new CultureInfo("en-US");
 
                     CultureInfo.CurrentCulture = culture;
                     CultureInfo.CurrentUICulture = culture;
+                 }
+                else
+                {
+                    var culture = new CultureInfo("en-US");
+                    CultureInfo.CurrentCulture = culture;
+                    CultureInfo.CurrentUICulture = culture;
                 }
-            }
-            
+            }             
 
             //string currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
 
