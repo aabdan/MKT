@@ -63,6 +63,7 @@ builder.Services.Configure<XmlSitemapOptions>(builder.Configuration.GetSection("
 builder.Services.AddScoped<IXmlSitemapGenerator, XmlSitemapGenerator>();
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+//builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 #endregion
 
 
@@ -138,16 +139,16 @@ app.UseStaticFiles(new StaticFileOptions
 
 app.UseResponseCompression();
 
-app.MapGet("/sitemap.xml", async (IXmlSitemapGenerator sitemapGenerator) =>
-{
-    var sitemapStream = sitemapGenerator.GenerateSitemap();
+//app.MapGet("/sitemap.xml", async (IXmlSitemapGenerator sitemapGenerator) =>
+//{
+//    var sitemapStream = sitemapGenerator.GenerateSitemap();
 
-    await using (var responseStream = sitemapStream)
-    {
-        var response = sitemapStream.ToArray();
-        await responseStream.WriteAsync(response);
-    }
-});
+//    await using (var responseStream = sitemapStream)
+//    {
+//        var response = sitemapStream.ToArray();
+//        await responseStream.WriteAsync(response);
+//    }
+//});
 
 
 
