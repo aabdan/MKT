@@ -19,7 +19,7 @@
                             <div class="col-12 col-md-6 mb-3">
                                 <div class="text-light pb-5" dir=@_localization.Getkey("lang_dir")>
                                     <h2 class="text-light" dir=@_localization.Getkey("lang_dir")> @_localization.Getkey("str_start_your_project")</h2>
-                                    <p class="lead" dir=@_localization.Getkey("lang_dir")>@_localization.Getkey("str_contact_content_main")</p>
+                                    <p class="lead" dir=@_localization.Getkey("lang_dir")>@_localization.Getkey("str-start-your-project-content-main")</p>
                                     <div class=" border-bottom border-5" style="width: 100px; "> </div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <textarea asp-for="PersonMessage" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str-contact-Message")" dir=@_localization.Getkey("lang_dir")></textarea>
+                                        <textarea asp-for="PersonMessage" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str-project-message")" dir=@_localization.Getkey("lang_dir")></textarea>
                                         <span asp-validation-for="PersonMessage" class="text-danger d-block mt-1 "></span>
 
                                     </div>
