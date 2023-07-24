@@ -234,3 +234,12 @@ nav {
         font-size: 18px;
     }
 }
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        /*opacity: 1*/
+    }
+}
