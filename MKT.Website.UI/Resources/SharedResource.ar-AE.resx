@@ -150,6 +150,9 @@
   <data name="str-digital-title" xml:space="preserve">
     <value>التسويق الرقمي</value>
   </data>
+  <data name="str-download-build-app-guide" xml:space="preserve">
+    <value>حمل الدليل الآن</value>
+  </data>
   <data name="str-ecommerce-content" xml:space="preserve">
     <value>المتاجر الإلكترونية الإنترنت ، تكامل الدفع</value>
   </data>
@@ -319,6 +322,6 @@
     <value>نقدم حلول تقنية في ابوظبي | تك نكزس</value>
   </data>
   <data name="str_title_footer" xml:space="preserve">
-    <value>تيك نكزس للحلول التقنية - شركة الشخص الواحد ذ م م</value>
+    <value>تيك نكزس للحلول التقنية - ابوظبي - مدينة محمد بن زايد - مقابل مدرسة المنارة - مبنى 133 - مكتب ميزانين 3 و 4 </value>
   </data>
 </root>

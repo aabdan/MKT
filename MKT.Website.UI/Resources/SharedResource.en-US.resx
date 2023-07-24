@@ -153,6 +153,9 @@
   <data name="str-digital-title" xml:space="preserve">
     <value>Digital Marketing</value>
   </data>
+  <data name="str-download-build-app-guide" xml:space="preserve">
+    <value>Get Build App Guide</value>
+  </data>
   <data name="str-ecommerce-content" xml:space="preserve">
     <value>Online Stores, Payment Integration</value>
   </data>
@@ -323,6 +326,6 @@ We strive to lead in the development of high-quality TECH solutions based on the
     <value>We are a tech solutions company in Abu Dhabi | Tech Nexus</value>
   </data>
   <data name="str_title_footer" xml:space="preserve">
-    <value>TECH NEXUS TECHNOLOGY SOLUTIONS - SOLE PROPRIETORSHIP L.L.C.</value>
+    <value>TECH NEXUS TECHNOLOGY SOLUTIONS - Office M3 &amp; M4, ME9, C133 - Mohamed bin Zayed City - Opposite to Al Manara Private School - Abu Dhabi - Office M03 &amp; M04</value>
   </data>
 </root>

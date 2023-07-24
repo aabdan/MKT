@@ -150,6 +150,9 @@
   <data name="str-digital-title" xml:space="preserve">
     <value>Marketing numérique</value>
   </data>
+  <data name="str-download-build-app-guide" xml:space="preserve">
+    <value>Obtenir le guide de l'application de construction</value>
+  </data>
   <data name="str-ecommerce-content" xml:space="preserve">
     <value>Boutiques en ligne, intégration des paiements</value>
   </data>
