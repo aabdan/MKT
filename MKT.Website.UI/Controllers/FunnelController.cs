@@ -43,7 +43,7 @@ namespace MKT.Website.UI.Controllers
         //POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Person obj)
+        public IActionResult Create(Person obj, ContactType contactType = ContactType.ContactUs)
         {
             //Custom Validation
             if (obj.PersonName == obj.PersonEmail)
@@ -56,7 +56,7 @@ namespace MKT.Website.UI.Controllers
                 _db.SaveChanges();
                 if (obj.PersonEmail is not null && obj.PersonName is not null)
                 {
-                    _ = SendBuildAppGuideByEmail(obj.PersonEmail, obj.PersonName, ContactType.ContactUs);
+                    _ = SendBuildAppGuideByEmail(obj.PersonEmail, obj.PersonName, contactType);
                 }
 
                 return Ok();
@@ -77,16 +77,16 @@ namespace MKT.Website.UI.Controllers
             {
                 case ContactType.ContactUs:
                     email.Subject = _configuration.GetValue<string>("ContactUsEmail:Subject");
-                    email.Body = new TextPart(TextFormat.Plain) { Text = _configuration.GetValue<string>("ContactUsEmail:Body") };
+                    email.Body = new TextPart(TextFormat.Html) { Text = "Dear " + ToName + ",<br/><br/>" + _configuration.GetValue<string>("ContactUsEmail:Body") + "<br/><br/>Best Regards,<br/> Tech Nexus - Abu Dhabi" };
                     break;
                 case ContactType.DownloadAppGuid:
                     email.Subject = _configuration.GetValue<string>("BuildAppGuideEmail:Subject");
-                    email.Body = new TextPart(TextFormat.Plain) { Text = _configuration.GetValue<string>("BuildAppGuideEmail:Body") };
+                    email.Body = new TextPart(TextFormat.Html) { Text = "Dear " + ToName + ",<br/><br/>" + _configuration.GetValue<string>("BuildAppGuideEmail:Body") + "<br/><br/>Best Regards,<br/> Tech Nexus - Abu Dhabi" };
                     break;
 
                 default:
                     email.Subject = _configuration.GetValue<string>("DefaultEmail:Subject");
-                    email.Body = new TextPart(TextFormat.Plain) { Text = _configuration.GetValue<string>("DefaultEmail:Body") };
+                    email.Body = new TextPart(TextFormat.Html) { Text = "Dear " + ToName + ",<br/><br/>" + _configuration.GetValue<string>("DefaultEmail:Body") + "<br/><br/>Best Regards,<br/> Tech Nexus - Abu Dhabi" };
                     break;
 
 
@@ -99,7 +99,7 @@ namespace MKT.Website.UI.Controllers
                 try
                 {
                     await smtpClient.ConnectAsync(_configuration.GetValue<string>("EmailConfiguration:SmtpServer"), _configuration.GetValue<int>("EmailConfiguration:Port"), SecureSocketOptions.StartTls);
-                    await smtpClient.AuthenticateAsync(_configuration.GetValue<string>("EmailConfiguration:From"), _configuration.GetValue<string>("EmailConfiguration:Password"));
+                    await smtpClient.AuthenticateAsync(_configuration.GetValue<string>("EmailConfiguration:Username"), _configuration.GetValue<string>("EmailConfiguration:Password"));
                     await smtpClient.SendAsync(email);
                 }
 

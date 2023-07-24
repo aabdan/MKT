@@ -1,4 +1,4 @@
-
+/*
 [Table of contents]
 
 1. SITE STRUCTURE and TYPOGRAPHY
@@ -16,6 +16,7 @@
 - 3.4 CSS for working forms demos
 - 3.5 Success submit
 - 3.6 Spacing
+    */
 /*============================================================================================*/
 /* 1.  SITE STRUCTURE and TYPOGRAPHY */
 /*============================================================================================*/
@@ -36,10 +37,10 @@ body {
     height: 100%;
 }
 
-html * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+    html * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
 body {
     background: #fff;
@@ -1427,4 +1428,3 @@ span.error {
     padding-top: 60px;
     padding-bottom: 35px;
 }
-

@@ -9,26 +9,23 @@
     <div class="background-image" data-background="url(/img/betler/main_bg_3.jpg)">
         <div class="min-vh-100 d-flex flex-column opacity-mask" data-opacity-mask="rgba(0, 84, 166, 0.6)">
 
-    <div class="container my-auto">
-        <div class="row">
-            <div class="col-md-9 col-lg-7 col-xl-5 mx-auto my-4">
+        <div class="container my-auto">
+ 
+          
+            <div class="col-md-9 col-lg-7 col-xl-5 mx-auto my-4 pt-5">
                 <div class="panel header_2 center" style="background-color:rgb(152 193 232 / 60%)">
-                    <figure class="add_bottom_30">
+                    <figure>
                         <a href="https://TechNexus.ae">
-                            <img src="/img/TechNexus/TechNexus-MKT-App.svg" width="100%" height="100%" alt="">
+                            <img src="/img/TechNexus/TechNexus-MKT-App.svg" style="width:100%; height:100%" alt="technexus-url">
                         </a>
                     </figure>
-                    <h4>
-                        <p>
-                                @_localization.Getkey("str_build_app_guid_1")
-                        </p>
-                        <p>
-                                @_localization.Getkey("str_build_app_guid_2")
-                        </p>
-                    </h4>
-                    <br />
+                   <div class="fs-4" style="color:#fff">
+        
+                                @_localization.Getkey("str-build-app-guid")
 
-                        <form id="contact-form" method="post" asp-action="Create" asp-controller="Funnel" class="p-5 pt-4 px-3 rounded-2">
+
+                        </div>          
+                        <form id="contact-form" method="post" class="p-2 rounded-2">
 
                         <div class="mb-3 ">
                             <input asp-for="PersonName" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str_contact_name")" dir=@_localization.Getkey("lang_dir") />
@@ -44,29 +41,36 @@
                             <span asp-validation-for="PersonEmail" class="text-danger d-block mt-1 "></span>
 
                         </div>
+                            <div class="mb-3">
+                                <textarea asp-for="PersonMessage" type="text" required class="form-control py-3" placeholder="@_localization.Getkey("str-contact-Message")" dir=@_localization.Getkey("lang_dir")></textarea>
+                                <span asp-validation-for="PersonMessage" class="text-danger d-block mt-1 "></span>
 
-                        <div class="form-group terms mb-3" dir=@_localization.Getkey("lang_dir")>
+                            </div>
 
-                            <label class="container_check fs-5" dir=@_localization.Getkey("lang_dir")>
-                                <input type="checkbox" asp-for="PersonSubscription" checked name="PersonSubscription" id="agree">
+                            <div class="form-group terms mb-3" dir=@_localization.Getkey("lang_dir")>
 
-                                @_localization.Getkey("str_contact_accept") <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">@_localization.Getkey("str_contact_join")</a>.
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <div class="form-group pb-5">
-                            <button id="my-form-button" type="submit" class="btn btn-primary btn-block btn-lg pt-3 pb-3 float-right" title="Send Now" style="background-color:rgb(0, 84, 166)" dir=@_localization.Getkey("lang_dir")>
+                                <label class="container_check" dir=@_localization.Getkey("lang_dir")>
+                                    <input class="form-check-input" type="checkbox" asp-for="PersonSubscription" checked name="PersonSubscription" id="agree">
+                                    <label class="form-check-label" for="agree">
+                                        @_localization.Getkey("str_contact_accept") <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">@_localization.Getkey("str_contact_join")</a>.
+
+                                    </label>
+
+                                </label>
+                            </div>
+                        <div class="form-group">
+                            <button id="my-form-button" type="submit" class="btn btn-primary btn-block btn-lg py-3 float-right" title="Send Now" style="background-color:rgb(0, 84, 166)" dir=@_localization.Getkey("lang_dir")>
                                 @_localization.Getkey("str-download-build-app-guide")
                             </button>
                         </div>
+                        <div class="row">
+                            <div id="success-message" class="alert alert-success mt-3 text-center fs-3 p-2" style="display: none;">@_localization.Getkey("str_contact_thanks")</div>
+                        </div>
                     </form>
-
-
-
                 </div>
             </div>
             <!-- /col -->
-        </div>
+   
         <!-- /row -->
     </div>
     </div>
@@ -74,26 +78,52 @@
 
     <!-- /container -->
     <!-- /background-image -->
-    <!-- Modal terms -->
-    <div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="termsLabel">الإشتراك</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>اذا كنت ترغب بمعرفة المزيد عن <strong>بناء المنتجات التقنية</strong>, يرجى الإشتراك.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn_1" data-bs-dismiss="modal">إغلاق</button>
-                </div>
+<!-- Modal terms -->
+<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="termsLabel">@_localization.Getkey("str-subscribe")</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <!-- /.modal-content -->
+            <div class="modal-body">
+                <p>@_localization.Getkey("str-know-more") <strong>@_localization.Getkey("str-buildappx")</strong>@_localization.Getkey("str-please-subscribe")</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn_1" data-bs-dismiss="modal">@_localization.Getkey("str-close")</button>
+            </div>
         </div>
-        <!-- /.modal-dialog -->
+        <!-- /.modal-content -->
     </div>
-    <!-- /.modal -->
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
 
+
+<script>
+    $(function () {
+        $('#contact-form').submit(function (event) {
+            event.preventDefault();
+
+            var formData = $(this).serialize();
+
+            $.ajax({
+                url: '@Url.Action("Create", "Funnel")?ContactType=DownloadAppGuid',
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    $('#success-message').show();
+                    $('#contact-form')[0].reset();
+                    setTimeout(function () {
+                        $('#success-message').fadeOut();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        });
+    });
+</script>
 
 

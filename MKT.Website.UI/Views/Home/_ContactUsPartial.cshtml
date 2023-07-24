@@ -60,6 +60,9 @@
                                 @_localization.Getkey("str_contact_btn")
                             </button>
                         </div>
+                        <div class="row">
+                            <div id="success-message" class="alert alert-success mt-3 text-center fs-3 p-2" style="display: none;">@_localization.Getkey("str_contact_thanks")</div>
+                        </div>
                     </form>
                 </div>
 
@@ -98,9 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div id="success-message" class="alert alert-success mt-3 text-center fs-3 p-2" style="display: none;">@_localization.Getkey("str_contact_thanks")</div>
-            </div>
+       
         </div>
     </section>
 </div>
@@ -110,14 +111,14 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="termsLabel">الإشتراك</h4>
+                <h4 class="modal-title" id="termsLabel">@_localization.Getkey("str-subscribe")</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>هل ترغب بمعرفة المزيد عن <strong>بناء المنتجات التقنية</strong>, يرجى الإشتراك.</p>
+                <p>@_localization.Getkey("str-know-more") <strong>@_localization.Getkey("str-buildappx")</strong>@_localization.Getkey("str-please-subscribe")</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn_1" data-bs-dismiss="modal">إغلاق</button>
+                <button type="button" class="btn_1" data-bs-dismiss="modal">@_localization.Getkey("str-close")</button>
             </div>
         </div>
         <!-- /.modal-content -->

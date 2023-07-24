@@ -129,6 +129,12 @@
   <data name="str-animation-direction" xml:space="preserve">
     <value>animation-direction:normal</value>
   </data>
+  <data name="str-buildappx" xml:space="preserve">
+    <value>créer des applications ?</value>
+  </data>
+  <data name="str-close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
   <data name="str-contact-Message" xml:space="preserve">
     <value>Message</value>
   </data>
@@ -168,6 +174,9 @@
   <data name="str-it-title" xml:space="preserve">
     <value>Conseil informatique</value>
   </data>
+  <data name="str-know-more" xml:space="preserve">
+    <value>Intéressé(e) à en savoir plus sur</value>
+  </data>
   <data name="str-meta-description" xml:space="preserve">
     <value>Transformez votre entreprise grâce à des solutions technologiques de pointe à Abu Dhabi. Offrant des applications mobiles et web, notre société technologique propose des services de transformation numérique pour les entreprises. Faites passer votre présence en ligne au niveau supérieur et atteignez vos objectifs commerciaux avec Tech Nexus.</value>
   </data>
@@ -177,11 +186,17 @@
   <data name="str-mobile-title" xml:space="preserve">
     <value>développement mobile</value>
   </data>
+  <data name="str-please-subscribe" xml:space="preserve">
+    <value>Abonnez-vous maintenant pour rester informé !</value>
+  </data>
   <data name="str-services-message" xml:space="preserve">
     <value>Voici un aperçu de ce que nous pouvons faire</value>
   </data>
   <data name="str-start-now" xml:space="preserve">
     <value>Commencez maintenant</value>
+  </data>
+  <data name="str-subscribe" xml:space="preserve">
+    <value>Abonnez-vous</value>
   </data>
   <data name="str-title-clients" xml:space="preserve">
     <value>Nos clients</value>
@@ -240,8 +255,8 @@
   <data name="str_btn_learn_more" xml:space="preserve">
     <value>En savoir plus</value>
   </data>
-  <data name="str_build_app_guid_1" xml:space="preserve">
-    <value>Pour télécharger le guide de construction de l'application</value>
+  <data name="str-build-app-guid" xml:space="preserve">
+    <value>Veuillez fournir les informations demandées pour accéder au téléchargement du guide de construction de l'application.</value>
   </data>
   <data name="str_build_app_guid_2" xml:space="preserve">
     <value>Veuillez remplir les informations suivantes :</value>
@@ -283,7 +298,7 @@
     <value>le téléphone</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
-    <value>Merci d'avoir</value>
+    <value>Merci ! Veuillez vérifier votre boîte de réception.</value>
   </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>Contactez-nous</value>

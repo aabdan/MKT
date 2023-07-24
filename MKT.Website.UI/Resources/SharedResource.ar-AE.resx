@@ -129,6 +129,12 @@
   <data name="str-animation-direction" xml:space="preserve">
     <value>animation-direction:reverse</value>
   </data>
+  <data name="str-buildappx" xml:space="preserve">
+    <value>بناء المنتجات التقنية</value>
+  </data>
+  <data name="str-close" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
   <data name="str-contact-Message" xml:space="preserve">
     <value>الوصف</value>
   </data>
@@ -168,6 +174,9 @@
   <data name="str-it-title" xml:space="preserve">
     <value>الإستشارات التقنية</value>
   </data>
+  <data name="str-know-more" xml:space="preserve">
+    <value>هل ترغب بمعرفة المزيد عن</value>
+  </data>
   <data name="str-meta-description" xml:space="preserve">
     <value>قم بتحويل شركتك مع حلول تكنولوجيا المعلومات المتقدمة في أبوظبي. نحن نقدم خدمات تطوير تطبيقات الجوال والويب، وشركتنا التكنولوجية متخصصة في خدمات التحول الرقمي للشركات. ارتقِ بوجودك عبر الإنترنت إلى مستوى جديد وحقق أهدافك التجارية مع Tech Nexus.</value>
   </data>
@@ -177,11 +186,17 @@
   <data name="str-mobile-title" xml:space="preserve">
     <value>تطبيقات الجوال</value>
   </data>
+  <data name="str-please-subscribe" xml:space="preserve">
+    <value>, يرجى الإشتراك</value>
+  </data>
   <data name="str-services-message" xml:space="preserve">
     <value> خدماتنا تشمل كافة الجوانب التقنية التي تحتاجها فكرتك اللامعة لكي تبدأ، أو شركتك الحالية لكي تواكب التطور، ونلخصها لك في نقاط سريعة كالتالي:</value>
   </data>
   <data name="str-start-now" xml:space="preserve">
     <value>إبدأ الآن</value>
+  </data>
+  <data name="str-subscribe" xml:space="preserve">
+    <value>الإشتراك</value>
   </data>
   <data name="str-title-clients" xml:space="preserve">
     <value>عملاؤنا</value>
@@ -240,11 +255,8 @@
   <data name="str_btn_learn_more" xml:space="preserve">
     <value>إعرف أكثر</value>
   </data>
-  <data name="str_build_app_guid_1" xml:space="preserve">
-    <value>لتحميل مراحل بناء و تطوير منتج تقني ،</value>
-  </data>
-  <data name="str_build_app_guid_2" xml:space="preserve">
-    <value>يرجى ادخال البيانات التالية :</value>
+  <data name="str-build-app-guid" xml:space="preserve">
+    <value>لتحميل مراحل بناء و تطوير منتج تقني، يرجى ادخال البيانات التالية:</value>
   </data>
   <data name="str_client" xml:space="preserve">
     <value>عملاؤنا</value>
@@ -283,7 +295,7 @@
     <value>الهاتف</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
-    <value>شكراً لك</value>
+    <value>شكراً لك ، يرجى التحقق من صندوق الوارد .</value>
   </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>اتصل بنا</value>

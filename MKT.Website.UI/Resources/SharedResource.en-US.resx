@@ -129,8 +129,14 @@
   <data name="str-animation-direction" xml:space="preserve">
     <value>animation-direction:normal</value>
   </data>
+  <data name="str-buildappx" xml:space="preserve">
+    <value>building apps?</value>
+  </data>
   <data name="str-clients-message" xml:space="preserve">
     <value>Here is a glimpse of what we can do</value>
+  </data>
+  <data name="str-close" xml:space="preserve">
+    <value>Close</value>
   </data>
   <data name="str-contact-Message" xml:space="preserve">
     <value>Message</value>
@@ -171,6 +177,9 @@
   <data name="str-it-title" xml:space="preserve">
     <value>IT Consultation</value>
   </data>
+  <data name="str-know-more" xml:space="preserve">
+    <value>Interested in learning more about </value>
+  </data>
   <data name="str-meta-description" xml:space="preserve">
     <value>Transform your business with cutting-edge tech solutions in Abu Dhabi. Offering mobile and web app development, our tech company specializes in digital transformation services for businesses. Take your online presence to the next level and achieve your business goals with Tech Nexus.</value>
   </data>
@@ -180,11 +189,17 @@
   <data name="str-mobile-title" xml:space="preserve">
     <value>mobile development</value>
   </data>
+  <data name="str-please-subscribe" xml:space="preserve">
+    <value>Subscribe now to stay updated!</value>
+  </data>
   <data name="str-services-message" xml:space="preserve">
     <value>Here is a glimpse of what we can do</value>
   </data>
   <data name="str-start-now" xml:space="preserve">
     <value>Start Now</value>
+  </data>
+  <data name="str-subscribe" xml:space="preserve">
+    <value>Subscribe</value>
   </data>
   <data name="str-title-clients" xml:space="preserve">
     <value>Our Clients </value>
@@ -208,7 +223,7 @@
     <value>Technexus is built to make your life easier. Variables, build tooling, documentation, and reusable components.</value>
   </data>
   <data name="str_about_block1_title" xml:space="preserve">
-    <value>About</value>
+    <value>ABOUT</value>
   </data>
   <data name="str_about_block2_content" xml:space="preserve">
     <value>To become pioneers in digital transformation in the region.</value>
@@ -226,7 +241,7 @@
     <value>Welcome to</value>
   </data>
   <data name="str_about_title_2" xml:space="preserve">
-    <value>TechNexus</value>
+    <value>Tech Nexus</value>
   </data>
   <data name="str_about_title_3" xml:space="preserve">
     <value>Develop anything.</value>
@@ -244,11 +259,8 @@ We strive to lead in the development of high-quality TECH solutions based on the
   <data name="str_btn_learn_more" xml:space="preserve">
     <value>Learn more</value>
   </data>
-  <data name="str_build_app_guid_1" xml:space="preserve">
-    <value>To download App Build Guide</value>
-  </data>
-  <data name="str_build_app_guid_2" xml:space="preserve">
-    <value>Please fill the following info:</value>
+  <data name="str-build-app-guid" xml:space="preserve">
+    <value>Kindly provide the requested information to access the App Build Guide download:</value>
   </data>
   <data name="str_client" xml:space="preserve">
     <value>Clients</value>
@@ -287,7 +299,7 @@ We strive to lead in the development of high-quality TECH solutions based on the
     <value>Phone</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
-    <value>Thank You</value>
+    <value>Thank you! Kindly review your Inbox.</value>
   </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>Contact Us</value>
@@ -326,6 +338,6 @@ We strive to lead in the development of high-quality TECH solutions based on the
     <value>We are a tech solutions company in Abu Dhabi | Tech Nexus</value>
   </data>
   <data name="str_title_footer" xml:space="preserve">
-    <value>TECH NEXUS TECHNOLOGY SOLUTIONS - Office M3 &amp; M4, ME9, C133 - Mohamed bin Zayed City - Opposite to Al Manara Private School - Abu Dhabi - Office M03 &amp; M04</value>
+    <value>TECH NEXUS TECHNOLOGY SOLUTIONS - Office M3 &amp; M4, ME9, C133 - Mohamed bin Zayed City - Opposite to Al Manara Private School - Abu Dhabi</value>
   </data>
 </root>
