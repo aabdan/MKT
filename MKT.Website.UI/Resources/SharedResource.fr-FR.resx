@@ -339,4 +339,13 @@
   <data name="str_title_footer" xml:space="preserve">
     <value>TECH NEXUS TECHNOLOGY SOLUTIONS - SOLE PROPRIETORSHIP L.L.C.</value>
   </data>
+  <data name="str-mobile-content-2" xml:space="preserve">
+    <value>Êtes-vous prêt à propulser votre entreprise à de nouveaux sommets grâce à une application mobile révolutionnaire ? Ne cherchez plus ! Notre service de développement mobile de premier ordre est là pour transformer votre vision en une réalité époustouflante.</value>
+  </data>
+  <data name="str-project-message" xml:space="preserve">
+    <value>Précisez vos exigences.</value>
+  </data>
+  <data name="str-start-your-project-content-main" xml:space="preserve">
+    <value>Vous souhaitez une application exceptionnelle pour votre entreprise? Contactez-nous et transformons votre rêve en réalité numérique!</value>
+  </data>
 </root>

@@ -247,9 +247,6 @@
     <value>
 هل تسعى لتطوير أعمالك من خلال التقنية؟ سواء كان ذلك بإنشاء موقع إلكتروني أو تطبيق مخصص لنشاطك التجاري؟ انضم إلينا لنقدم لك موقعًا أو تطبيقًا جميلًا وعصريًا باستخدام أحدث التقنيات والتصميمات الحديثة.
 </value>
-
-
-
   </data>
   <data name="str_btn_about1" xml:space="preserve">
     <value>عرض كل الصفحات</value>
@@ -340,5 +337,14 @@
   </data>
   <data name="str_title_footer" xml:space="preserve">
     <value>تيك نكزس للحلول التقنية - ابوظبي - مدينة محمد بن زايد - مقابل مدرسة المنارة - مبنى 133 - مكتب ميزانين 3 و 4 </value>
+  </data>
+  <data name="str-mobile-content-2" xml:space="preserve">
+    <value>هل أنت جاهز لرفع أعمالك إلى مستويات جديدة باستخدام تطبيق محمول ثوري؟ لا تبحث بعيدًا! خدمتنا المتميزة في تطوير التطبيقات المحمولة هنا لتحويل رؤيتك إلى واقع مذهل.</value>
+  </data>
+  <data name="str-project-message" xml:space="preserve">
+    <value>وصف المشروع</value>
+  </data>
+  <data name="str-start-your-project-content-main" xml:space="preserve">
+    <value>هل ترغب في تطبيق مميز لأعمالك؟ تواصل معنا ودعنا نجعل حلمك واقعًا رقميًا!</value>
   </data>
 </root>

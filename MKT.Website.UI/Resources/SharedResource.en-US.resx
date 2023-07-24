@@ -339,4 +339,13 @@
   <data name="str_title_footer" xml:space="preserve">
     <value>TECH NEXUS TECHNOLOGY SOLUTIONS - Office M3 &amp; M4, ME9, C133 - Mohamed bin Zayed City - Opposite to Al Manara Private School - Abu Dhabi</value>
   </data>
+  <data name="str-mobile-content-2" xml:space="preserve">
+    <value>Are you ready to take your business to new heights with a game-changing mobile app? Look no further! Our premier mobile development service is here to transform your vision into a stunning reality.</value>
+  </data>
+  <data name="str-project-message" xml:space="preserve">
+    <value>Outline your specifications.</value>
+  </data>
+  <data name="str-start-your-project-content-main" xml:space="preserve">
+    <value>Dreaming of a cutting-edge mobile or web app for your business? Partner with us and let's turn that dream into a digital masterpiece!</value>
+  </data>
 </root>
