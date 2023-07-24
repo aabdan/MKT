@@ -113,15 +113,15 @@
         <i class="fa-brands fa-whatsapp my-float"></i>
     </a>
 
-    <div>
-        <main role="main" style="min-height:80vh;">
+    <div id="content">
+        <main role="main" style="min-height:80vh;" >
             @RenderBody()
         </main>
     </div>
 
    
   
-    <footer class="text-center text-lg-start bg-white text-muted">
+    <footer class="text-center text-lg-start bg-white text-muted " id="footer">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-light" dir=@_localization.Getkey("lang_dir")>
             <!-- Left -->
@@ -185,6 +185,17 @@
                 $(this).toggleClass("active");
             });
         });
+        $(document).ready(function () {
+            var windowHeight = $(window).height();
+            var contentHeight = $("#content").height();
+            console.log(windowHeight,contentHeight);
+            if (contentHeight < windowHeight) {
+                $("#footer").addClass("fixed-bottom");
+            } else {
+                $("#footer").removeClass("fixed-bottom");
+            }
+        });
+
 
     </script>
 
