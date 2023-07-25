@@ -83,7 +83,6 @@ namespace MKT.Website.Controllers
         }
 
 
-        [Route("Privacy")]
 
         public IActionResult Privacy()
         {

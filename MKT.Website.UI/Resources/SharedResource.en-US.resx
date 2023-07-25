@@ -139,7 +139,7 @@
     <value>Close</value>
   </data>
   <data name="str-contact-Message" xml:space="preserve">
-    <value>Message</value>
+    <value>What is your Project About</value>
   </data>
   <data name="str-cyber-content" xml:space="preserve">
     <value>Protect, Defense and Assurance, Risk and Policies compliance</value>
@@ -187,7 +187,7 @@
     <value>Developing iOS &amp; Android Native and Hybrid Apps</value>
   </data>
   <data name="str-mobile-title" xml:space="preserve">
-    <value>mobile development</value>
+    <value>Mobile Apps Development</value>
   </data>
   <data name="str-please-subscribe" xml:space="preserve">
     <value>Subscribe now to stay updated!</value>
@@ -220,7 +220,7 @@
     <value>About</value>
   </data>
   <data name="str_about_block1_content" xml:space="preserve">
-    <value>Technexus is built to make your life easier. Variables, build tooling, documentation, and reusable components.</value>
+    <value>Tech Nexus is built to make your life easier. Variables, build tooling, documentation, and reusable components.</value>
   </data>
   <data name="str_about_block1_title" xml:space="preserve">
     <value>ABOUT</value>
@@ -232,7 +232,7 @@
     <value>VISION</value>
   </data>
   <data name="str_about_block3_content" xml:space="preserve">
-    <value>We believe that the technology products industry should be efficient and beneficial to businesses and services, enhancing operations and serving humanity.</value>
+    <value>Our belief is that the technology products industry should operate efficiently and provide benefits to businesses and services, optimizing operations and serving humanity.</value>
   </data>
   <data name="str_about_block3_title" xml:space="preserve">
     <value>MISSION</value>
@@ -289,16 +289,17 @@
     <value>Message</value>
   </data>
   <data name="str_contact_name" xml:space="preserve">
-    <value>Name</value>
+    <value>Full Name</value>
   </data>
   <data name="str_contact_ourmail" xml:space="preserve">
     <value>E-mail</value>
   </data>
   <data name="str_contact_phone" xml:space="preserve">
-    <value>Phone</value>
+    <value>Mobile Number</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
-    <value>Thank you! Kindly review your Inbox.</value>
+    <value>Thank You For Reaching Out
+We've sent you an email with all the important details attached. Our consultant team will get back to you in 24 hours.</value>
   </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>Contact Us</value>
@@ -347,5 +348,8 @@
   </data>
   <data name="str-start-your-project-content-main" xml:space="preserve">
     <value>Dreaming of a cutting-edge mobile or web app for your business? Partner with us and let's turn that dream into a digital masterpiece!</value>
+  </data>
+  <data name="str-privacy" xml:space="preserve">
+    <value>Privacy Policy</value>
   </data>
 </root>

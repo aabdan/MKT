@@ -347,4 +347,7 @@
   <data name="str-start-your-project-content-main" xml:space="preserve">
     <value>هل ترغب في تطبيق مميز لأعمالك؟ تواصل معنا ودعنا نجعل حلمك واقعًا رقميًا!</value>
   </data>
+  <data name="str-privacy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
 </root>

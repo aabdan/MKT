@@ -136,7 +136,7 @@
     <value>Fermer</value>
   </data>
   <data name="str-contact-Message" xml:space="preserve">
-    <value>Message</value>
+    <value>De quoi parle votre projet </value>
   </data>
   <data name="str-cyber-content" xml:space="preserve">
     <value>Protection, défense et assurance, conformité aux risques et aux politiques</value>
@@ -184,7 +184,7 @@
     <value>Développer iOS &amp; Applications Android natives et hybrides</value>
   </data>
   <data name="str-mobile-title" xml:space="preserve">
-    <value>développement mobile</value>
+    <value>Développement d'applications mobiles</value>
   </data>
   <data name="str-please-subscribe" xml:space="preserve">
     <value>Abonnez-vous maintenant pour rester informé !</value>
@@ -289,16 +289,16 @@
     <value>Votre message</value>
   </data>
   <data name="str_contact_name" xml:space="preserve">
-    <value>votre nom</value>
+    <value>Nom complet</value>
   </data>
   <data name="str_contact_ourmail" xml:space="preserve">
     <value>E-mail</value>
   </data>
   <data name="str_contact_phone" xml:space="preserve">
-    <value>le téléphone</value>
+    <value>Numéro de téléphone portable</value>
   </data>
   <data name="str_contact_thanks" xml:space="preserve">
-    <value>Merci ! Veuillez vérifier votre boîte de réception.</value>
+    <value>Merci de nous avoir contactés. Nous vous avons envoyé un e-mail avec tous les détails importants en pièce jointe. Notre équipe de consultants vous répondra dans les 24 heures.</value>
   </data>
   <data name="str_contact_title" xml:space="preserve">
     <value>Contactez-nous</value>
@@ -347,5 +347,8 @@
   </data>
   <data name="str-start-your-project-content-main" xml:space="preserve">
     <value>Vous souhaitez une application exceptionnelle pour votre entreprise? Contactez-nous et transformons votre rêve en réalité numérique!</value>
+  </data>
+  <data name="str-privacy" xml:space="preserve">
+    <value>Confidentialité</value>
   </data>
 </root>
