@@ -139,6 +139,8 @@ app.UseHsts();
 
 app.UseHttpsRedirection();
 
+app.UseStaticFiles();
+
 app.UseStaticFiles(new StaticFileOptions
 {
     //Google Page Speed- Serve static assets with an efficient cache policy
