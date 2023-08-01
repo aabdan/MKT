@@ -1,4 +1,17 @@
-﻿
+﻿@using MKT.Website.UI.Models;
+@using Newtonsoft.Json;
+@{var personSchema = new PersonSchema
+{
+    Name = "Tech Nexus",
+    Url = "https://technexus.ae/",
+    Telephone = "00971507746099",
+    Email = "info@technexus.ae"
+};
+}
+
+@{var json = JsonConvert.SerializeObject(personSchema);}
+
+
 @{
     Layout = "~/Views/Shared/_Master.cshtml";
     ViewData["Title"] = _localization.Getkey("str_title");
@@ -40,5 +53,8 @@
     });
 </script>
 
+<script type="application/ld+json">
+    @Html.Raw(json)
+</script>
 
 
