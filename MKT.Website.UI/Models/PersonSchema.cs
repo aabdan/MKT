@@ -16,11 +16,11 @@ namespace MKT.Website.UI.Models
         [JsonProperty("url")]
         public string Url { get; set; }
 
-        [JsonProperty("telephone")]
-        public string Telephone { get; set; }
+        [JsonProperty("@telephone")]
+        public string Telephone { get; set; } = "00971507746099";
 
-        [JsonProperty("email")]
-        public string Email { get; set; }
+        [JsonProperty("@email")]
+        public string Email { get; set; } = "info@technexus.ae";
         // Add more properties as needed
     }
 
