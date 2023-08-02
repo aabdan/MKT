@@ -16,7 +16,7 @@ namespace MKT.Website.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private LanguageService _localization;
-
+        private string _languageCode;
 
         public HomeController(ILogger<HomeController> logger, LanguageService localization)
         {
@@ -39,9 +39,9 @@ namespace MKT.Website.Controllers
                                   .Replace("/en", "").Replace("/ar", "").Replace("/fr", "");
 
 
-            string languageCode = culture.Substring(0, 2);
-            languageCode = languageCode.Substring(0, 1).ToLower() + languageCode.Substring(1);
-            return Redirect($"/{languageCode}{returnUrl}");
+            _languageCode = culture.Substring(0, 2);
+            _languageCode = _languageCode.Substring(0, 1).ToLower() + _languageCode.Substring(1);
+            return Redirect($"/{_languageCode}{returnUrl}");
 
 
         }
@@ -50,6 +50,12 @@ namespace MKT.Website.Controllers
 
         public IActionResult About()
         {
+            string canonicalUrl = "https://technexus.ae/" + _languageCode + "/Home/About";
+
+            Response.Headers.Add("Canonical", canonicalUrl);
+            Response.Headers.Add("Hreflang", _languageCode);
+
+
             return View();
         }
 
@@ -57,6 +63,11 @@ namespace MKT.Website.Controllers
 
         public IActionResult Services()
         {
+            string canonicalUrl = "https://technexus.ae/" + _languageCode + "/Home/Services";
+
+            Response.Headers.Add("Canonical", canonicalUrl);
+            Response.Headers.Add("Hreflang", _languageCode);
+
             return View();
         }
 
@@ -64,6 +75,11 @@ namespace MKT.Website.Controllers
 
         public IActionResult Technologies()
         {
+            string canonicalUrl = "https://technexus.ae/" + _languageCode + "/Home/Technologies";
+
+            Response.Headers.Add("Canonical", canonicalUrl);
+            Response.Headers.Add("Hreflang", _languageCode);
+
             return View();
         }
 
@@ -72,6 +88,11 @@ namespace MKT.Website.Controllers
 
         public IActionResult Clients()
         {
+            string canonicalUrl = "https://technexus.ae/" + _languageCode + "/Home/Clients";
+
+            Response.Headers.Add("Canonical", canonicalUrl);
+            Response.Headers.Add("Hreflang", _languageCode);
+
             return View();
         }
 
@@ -79,6 +100,11 @@ namespace MKT.Website.Controllers
 
         public IActionResult ContactUs()
         {
+            string canonicalUrl = "https://technexus.ae/" + _languageCode + "/Home/ContactUs";
+
+            Response.Headers.Add("Canonical", canonicalUrl);
+            Response.Headers.Add("Hreflang", _languageCode);
+
             return View();
         }
 
@@ -98,6 +124,10 @@ namespace MKT.Website.Controllers
         public IActionResult Main(string lang)
         {
             var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
+            string canonicalUrl = "https://technexus.ae/";
+
+            Response.Headers.Add("Canonical", canonicalUrl);
+            Response.Headers.Add("Hreflang", _languageCode);
 
             return View();
         }
