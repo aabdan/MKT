@@ -9,6 +9,16 @@
     <meta name="author" content="Tech Nexus" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="robots" content="max-snippet:20, max-image-preview:large">
+    @{
+        var canonicalUrl = ViewBag.CanonicalUrl as string;
+        var hreflang = ViewBag.Hreflang as string;
+    }
+
+    @if (!string.IsNullOrEmpty(canonicalUrl))
+    {
+        <link rel="canonical" href="@canonicalUrl" />
+        <link rel="alternate" href="@canonicalUrl" hreflang="@hreflang" />
+    }
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"

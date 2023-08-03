@@ -1,0 +1,8 @@
+﻿@{
+    var canonicalUrl = ViewBag.CanonicalUrl as string;
+}
+
+@if (!string.IsNullOrEmpty(canonicalUrl))
+{
+    <link rel="canonical" href="@canonicalUrl" />
+}
