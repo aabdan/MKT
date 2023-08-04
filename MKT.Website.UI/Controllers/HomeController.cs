@@ -139,7 +139,7 @@ namespace MKT.Website.Controllers
 
             languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
 
-            ViewBag.CanonicalUrl = "https://technexus.ae/";
+            ViewBag.CanonicalUrl = "https://technexus.ae/" + languageCode + "/";
             ViewBag.Hreflang = languageCode + "-default";
 
             return PartialView();
@@ -151,7 +151,7 @@ namespace MKT.Website.Controllers
 
             languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
 
-            ViewBag.CanonicalUrl = "https://technexus.ae/";
+            ViewBag.CanonicalUrl = "https://technexus.ae/" + languageCode + "/";
             ViewBag.Hreflang = languageCode + "-default";
 
             return View();
@@ -159,6 +159,15 @@ namespace MKT.Website.Controllers
 
         public IActionResult StartYourProject()
         {
+            string languageCode = CultureInfo.CurrentCulture.ToString();
+
+            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
+
+            string canonicalUrl = "https://technexus.ae/" + languageCode + "/Home/StartYourProject";
+
+            ViewBag.CanonicalUrl = canonicalUrl;
+            ViewBag.Hreflang = languageCode;
+
             return View();
         }
         public IActionResult TesterPage()
