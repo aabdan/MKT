@@ -54,7 +54,7 @@ namespace MKT.Website.Controllers
         {            
             string languageCode = CultureInfo.CurrentCulture.ToString();
 
-            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AR" ? "ar" : "fr";
+            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
             string canonicalUrl = "https://technexus.ae/" + languageCode + "/Home/About";
 
             ViewBag.CanonicalUrl = canonicalUrl;
@@ -69,7 +69,7 @@ namespace MKT.Website.Controllers
         {
             string languageCode = CultureInfo.CurrentCulture.ToString();
 
-            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AR" ? "ar" : "fr";
+            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
             string canonicalUrl = "https://technexus.ae/" + languageCode + "/Home/Services";
 
             ViewBag.CanonicalUrl = canonicalUrl;
@@ -84,7 +84,7 @@ namespace MKT.Website.Controllers
         {
             string languageCode = CultureInfo.CurrentCulture.ToString();
 
-            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AR" ? "ar" : "fr";
+            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
             string canonicalUrl = "https://technexus.ae/" + languageCode + "/Home/Technologies";
 
             ViewBag.CanonicalUrl = canonicalUrl;
@@ -100,7 +100,7 @@ namespace MKT.Website.Controllers
         {
             string languageCode = CultureInfo.CurrentCulture.ToString();
 
-            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AR" ? "ar" : "fr";
+            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
             string canonicalUrl = "https://technexus.ae/" + languageCode + "/Home/Clients";
 
             ViewBag.CanonicalUrl = canonicalUrl;
@@ -115,7 +115,7 @@ namespace MKT.Website.Controllers
         {
             string languageCode = CultureInfo.CurrentCulture.ToString();
 
-            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AR" ? "ar" : "fr";
+            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
 
             string canonicalUrl = "https://technexus.ae/" + languageCode + "/Home/ContactUs";
 
@@ -137,7 +137,7 @@ namespace MKT.Website.Controllers
         {
             string languageCode = CultureInfo.CurrentCulture.ToString();
 
-            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AR" ? "ar" : "fr";
+            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
 
             ViewBag.CanonicalUrl = "https://technexus.ae/";
             ViewBag.Hreflang = languageCode + "-default";
@@ -149,7 +149,7 @@ namespace MKT.Website.Controllers
         {
             string languageCode = CultureInfo.CurrentCulture.ToString();
 
-            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AR" ? "ar" : "fr";
+            languageCode = languageCode == "en-US" ? "en" : languageCode == "ar-AE" ? "ar" : "fr";
 
             ViewBag.CanonicalUrl = "https://technexus.ae/";
             ViewBag.Hreflang = languageCode + "-default";
